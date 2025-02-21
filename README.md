@@ -1,0 +1,2 @@
+# karalama_defteri
+Blog
