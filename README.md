@@ -1,0 +1,1 @@
+# karalama_defteri
