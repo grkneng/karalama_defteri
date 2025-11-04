@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TechHub - Teknoloji ve İnovasyonun Merkezi</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="navbar-placeholder"></div>
+
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" style="margin-top: 0">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                        <h1>Yapay Zeka ile Geleceği Keşfedin</h1>
+                        <p>Teknolojinin sınırlarını aşın</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+                        <h1>Web Geliştirme Sanatı</h1>
+                        <p>Modern uygulamalar, sonsuz olasılıklar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+                        <h1>Veri Bilimi ve Analitik</h1>
+                        <p>Verilerle öyküler anlat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card project-card border-0">
+                        <div class="card-body text-center p-4 mb-">
+                            <i class="bi bi-box-seam display-5 mb-3 text-white"></i>
+                            <h5 class="card-title text-white mb-2 fw-bold">CFD Analiz Motoru v1.0</h5>
+                            <p class="card-text small text-white-50 mb-4">
+                                Isı transferi ve akış simülasyonları için tescilli yazılım çözümü. Proje sayfasını
+                                inceleyin.
+                            </p>
+
+                            <a href="/proje/cfd-landing-page.html" class="btn btn-lg btn-light w-100 fw-bold shadow-sm">
+                                Projeyi Keşfet →
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion mt-4 mb-4" id="accordionPanel">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <i class="bi bi-thermometer-half me-2"></i> Isıtma ve Soğutma Sistemleri
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionPanel">
+                                <div class="accordion-body">
+                                    <p class="small text-muted mb-2">
+                                        Verimlilik, hesaplama yöntemleri ve güncel HVAC teknolojileri hakkında teknik
+                                        dokümanlar.
+                                    </p>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Kazan ve Isı Pompası
+                                                Verimliliği</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Merkezi VRF Sistemleri</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <i class="bi bi-fan me-2"></i> Havalandırma Sistemleri (HVAC)
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPanel">
+                                <div class="accordion-body">
+                                    <p class="small text-muted mb-2">
+                                        Hava debisi hesapları, iç hava kalitesi (IAQ) ve CFD bazlı hava akışı
+                                        modellemeleri.
+                                    </p>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> CFD Analiz Metodolojisi</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Fan Seçimi ve Kanal
+                                                Optimizasyonu</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <i class="bi bi-droplet me-2"></i> Su ve Atık Yönetimi
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionPanel">
+                                <div class="accordion-body">
+                                    <p class="small text-muted mb-2">
+                                        Sıhhi tesisat prensipleri, pompaj sistemleri ve uluslararası boru tesisatı
+                                        standartları.
+                                    </p>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Boru Tesisatı Standartları
+                                                (ISO/EN)</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Basınç Kaybı Hesapları</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <i class="bi bi-fire me-2"></i> Yangın Güvenliği Sistemleri
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPanel">
+                                <div class="accordion-body">
+                                    <p class="small text-muted mb-2">
+                                        Sprinkler sistemleri, hidrant ağları ve NFPA/EN normlarına uygun tasarım
+                                        yaklaşımları.
+                                    </p>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> NFPA Temel İlkeleri</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Pompa Seçim Kriterleri</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    <i class="bi bi-lightning me-2"></i> Enerji Yönetimi ve Yakıtlar
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionPanel">
+                                <div class="accordion-body">
+                                    <p class="small text-muted mb-2">
+                                        Enerji etütleri, yenilenebilir kaynaklar (Solar, Biokütle) ve yakıt sistemleri
+                                        tasarımı.
+                                    </p>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Fotovoltaik Sistem Hesapları</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> Doğalgaz Tesisat Tasarımı</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix"
+                                    aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    <i class="bi bi-cpu me-2"></i> Otomatik Kontrol ve BIM
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionPanel">
+                                <div class="accordion-body">
+                                    <p class="small text-muted mb-2">
+                                        Mekanik tesisat otomasyonu, DDC/PLC sistemleri ve Bina Bilgi Modellemesi (BIM)
+                                        entegrasyonu.
+                                    </p>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> BMS/DDC Temelleri</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="md.html" class="text-decoration-none d-block py-1"
+                                                ><i class="bi bi-arrow-right-short"></i> BIM ve Mekanik Modelleme</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4 mb-4">
+                        <div class="card-header bg-dark text-white fw-bold">
+                            <i class="bi bi-fire me-2"></i> yCombinator's HackerNews
+                        </div>
+                        <div class="list-group list-group-flush" id="hackerNewsContainer">
+                            <div class="p-3 text-center text-muted small">Yükleniyor...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="alert alert-primary mb-5" role="alert">
+                        <h4 class="alert-heading">Sadelik, kompleks düşüncenin zirvesidir...</h4>
+                        <p>Genel tanıtım, hedefler, amaçlar...</p>
+                        <hr />
+                        <p class="mb-0">Call Action</p>
+                    </div>
+
+                    <div id="feedContainer" class="feed-container">
+                        <div class="text-center mt-5">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Yükleniyor...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mb-4">
+                    <div class="card text-bg-dark mb-3">
+                        <img src="https://picsum.photos/480/640" class="card-img" alt="..." />
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Projele / Ürün Adı</h5>
+                            <p class="card-text">Ürün ve/veya Proje görselleri ile bağlantılar. Açıklama Satırı 1</p>
+                            <p class="card-text"><small>Açıklama satırı 2</small></p>
+                        </div>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=1" alt="Data" />
+                                <div class="gallery-overlay"><span>Veri</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=2" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=3" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=4" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=5" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=6" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=7" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=8" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                        <div class="gallery-item">
+                            <a href="/disiplin/enerji-etudu.html" class="text-decoration-none d-block">
+                                <img src="https://picsum.photos/200?random=9" alt="Data" />
+                                <div class="gallery-overlay"><span>link</span></div></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-placeholder"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

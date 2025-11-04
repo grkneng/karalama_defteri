@@ -1,0 +1,73 @@
+/* =================================================================
+// DOKÜMANTASYON SAYFASI ÖZEL STİLLERİ (md.css)
+// md.html için ek stil düzenlemeleri
+// ================================================================= */
+
+/* ---- Menü (Sol Panel) Stilleri ---- */
+
+/* Kategori başlıkları için özel stil */
+#markdown-menu-container .list-group-item-primary {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    cursor: default; /* Kategoriye tıklamayı engelle */
+}
+
+/* Doküman bağlantıları (varsayılan stil) */
+#markdown-menu-container .list-group-item-action {
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid transparent; /* Aktif olmayanları şeffaf kenarlık ile ayır */
+}
+
+/* Aktif olarak seçili olan doküman */
+#markdown-menu-container .list-group-item-action.active {
+    background-color: #f0f4ff; /* Hafif mavi arka plan */
+    color: var(--secondary-color);
+    font-weight: 600;
+    border-left: 3px solid var(--secondary-color);
+}
+
+/* Hover efekti */
+#markdown-menu-container .list-group-item-action:hover:not(.active) {
+    background-color: #f8f9fa;
+    color: var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+}
+
+/* ---- Etiket Bulutu (Sağ Panel) Stilleri ---- */
+
+.tags-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Etiketler arası boşluk */
+}
+
+.tags-cloud .badge {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.tags-cloud .badge:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ---- Responsive Ayarlar ---- */
+@media (max-width: 992px) {
+    /* Küçük ekranlarda yapışkanlığı iptal et */
+    .sticky-top {
+        position: static !important;
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "type": "text",
+            "title": "JavaScript ES2024 Yenilikler",
+            "description": "JavaScript'in en son özelliklerini keşfedin",
+            "content": "JavaScript 2024 sürümü, dil için yeni kapılar açıyor. Promise.withResolvers(), Array.toReversed() ve daha birçok faydalı API eklendi. Modern JavaScript geliştirme artık daha kolay ve güçlü.",
+            "author": "Ahmet Yılmaz",
+            "date": "2025-11-02",
+            "readTime": 5,
+            "category": "JavaScript",
+            "articlePath": "article_001.html" 
+        },
+        {
+            "id": 2,
+            "type": "image",
+            "title": "React 19 ile Web Geliştirme",
+            "description": "React'ın yeni versiyonu neler getiriyor",
+            "content": "React 19, kullanıcı arayüzü geliştirmeyi yeniden tanımladı. Server Components, Actions ve otomatik batching gibi özellikler performance'ı dramatik şekilde artırıyor. Performant ve ölçeklenebilir uygulamalar yapmak artık hiç bu kadar kolay olmamıştı.",
+            "image": "https://picsum.photos/400/250?random=1",
+            "author": "Zeynep Kaya",
+            "date": "2025-11-01",
+            "readTime": 7,
+            "category": "React",
+            "articlePath": "article_002.html" 
+        },
+        {
+            "id": 3,
+            "type": "video",
+            "title": "Docker ile Containerization",
+            "description": "Uygulamalarınızı container'larda çalıştırın",
+            "content": "Docker, uygulamaları izole ortamlarda çalıştırmanın en etkili yoludur. Container teknolojisini öğrenerek, deployment süreçlerinizi drastik şekilde basitleştirebilirsiniz. Bu video, Docker'ın temellerinden ileri seviyelere kadar tüm öğretir.",
+            "video": "https://www.youtube.com/embed/fqMOX6JJhGo",
+            "author": "Mehmet Demir",
+            "date": "2025-10-31",
+            "readTime": 10,
+            "category": "DevOps",
+            "articlePath": "article_003.html"
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "TypeScript Best Practices",
+            "description": "Yazılım kalitesini artırmanın yolları",
+            "content": "TypeScript, dinamik dillerin esnekliğini statik tiplemenin güvenliğiyle birleştirir. Doğru tip tanımlamaları kullanarak, runtime hataları önceden tespit edebilirsiniz. Bu makale, TypeScript en iyi uygulamalarını derinlemesine inceliyor.",
+            "author": "Selin Özdemir",
+            "date": "2025-10-29",
+            "readTime": 8,
+            "category": "TypeScript",
+            "articlePath": "article_004.html"
+        },
+        {
+            "id": 5,
+            "type": "image",
+            "title": "Web Tasarımda Accessibility",
+            "description": "Erişilebilir web arayüzleri tasarlayın",
+            "content": "Erişilebilirlik, sadece bir niş değil; teknolojinin temel sorumluluğudur. WCAG standartlarına uyarak, vizyonel engelli kullanıcılar da dahil olmak üzere herkes sizin web uygulamanızı kullanabilir.",
+            "image": "https://picsum.photos/400/250?random=2",
+            "author": "Can Kıpçak",
+            "date": "2025-10-28",
+            "readTime": 6,
+            "category": "Tasarım",
+            "articlePath": "article_005.html"
+        },
+        {
+            "id": 6,
+            "type": "video",
+            "title": "Python ile Makine Öğrenmesi",
+            "description": "AI/ML projelerine başlangıç",
+            "content": "Python, makine öğrenmesi alanında en popüler dildir. scikit-learn, TensorFlow ve PyTorch kütüphaneleri ile güçlü ML modelleri oluşturabilirsiniz. Bu video series, temel kavramlardan derin sinir ağlarına kadar gider.",
+            "video": "https://www.youtube.com/embed/z0AUrwl3-DI?si=n54Y6ijk7-PhbkWs",
+            "author": "Fatih Çelik",
+            "date": "2025-10-27",
+            "readTime": 12,
+            "category": "Python",
+            "articlePath": "article_006.html"
+        },
+        {
+            "id": 7,
+            "type": "text",
+            "title": "Cloud Architecture Patterns",
+            "description": "Bulut üzerinde skallanabilir sistemler",
+            "content": "Microservices, Serverless ve Event-Driven Architecture, modern bulut uygulamalarının temel yapı taşlarıdır. Doğru mimarı seçerek, hem maliyetleri azaltabilir hem de sisteminizin ölçeklenebilirliğini artırabilirsiniz.",
+            "author": "Deniz Yıldız",
+            "date": "2025-10-26",
+            "readTime": 9,
+            "category": "Cloud",
+            "articlePath": "article_007.html"
+        },
+        {
+            "id": 8,
+            "type": "image",
+            "title": "GraphQL vs REST API",
+            "description": "Modern veri taşıma protokollerini karşılaştırın",
+            "content": "GraphQL ve REST, farklı ihtiyaçlar için tasarlanmıştır. REST basit ve güvenilir, GraphQL ise daha esnek ve verimlidir. Projektinizin gereksinimlerine göre doğru seçimi yapın.",
+            "image": "https://picsum.photos/400/250?random=3",
+            "author": "Nurşah Yoğun",
+            "date": "2025-10-25",
+            "readTime": 7,
+            "category": "Backend",
+            "articlePath": "article_008.html"
+        }
+    ]
+}

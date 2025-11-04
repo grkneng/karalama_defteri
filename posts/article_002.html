@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Makale - Docker ile Containerization</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <div id="navbar-placeholder"></div>
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card profile-card">
+                        <div class="card-body text-center">
+                            <img
+                                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                                alt="Profil"
+                                class="rounded-circle mb-3 border border-3 border-primary p-1" />
+                            <h5 class="card-title mb-1">Gürkan Engin</h5>
+                            <p class="text-muted small mb-3">Editör</p>
+                            <p class="small mb-4">Teknoloji ve yazılım geliştirme alanında deneyimli profesyonel.</p>
+
+                            <div class="text-center small mb-3">
+                                <p class="mb-1"><i class="text-primary"></i> İstanbul, TR</p>
+                                <p class="mb-1"><i class="text-primary"></i> gurkan@degisim.org.tr</p>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-4">
+                                <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-github"></i></a>
+                                <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-reddit"></i></a>
+                                <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-pinterest"></i></a>
+                            </div>
+
+                            <hr class="mt-0" />
+
+                            <h6 class="text-start mb-3">Son Yayınlananlar</h6>
+                            <ul class="list-unstyled text-start small">
+                                <li class="mb-2">
+                                    <a href="posts/article_001.html?id=1" class="text-decoration-none text-dark">
+                                        <i class="bi bi-file-earmark-text-fill me-2 text-secondary"></i> ES2024
+                                        Yenilikler: Derin İnceleme
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <i class="bi bi-file-earmark-text-fill me-2 text-secondary"></i> HVAC
+                                        Optimizasyonu Vaka Etüdü
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <i class="bi bi-file-earmark-text-fill me-2 text-secondary"></i> Akışkanlar
+                                        Mekaniğinde Yeni Modeller
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-grid mt-3">
+                                <button type="button" class="btn btn-sm btn-outline-primary">Tüm Yayınları Gör</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4 mb-4">
+                        <div class="card-body">
+                            <h6>İçindekiler</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#giris" class="text-decoration-none">1. Giriş ve Tanım</a></li>
+                                <li>
+                                    <a href="#avantajlar" class="text-decoration-none"
+                                        >2. Containerization Avantajları</a
+                                    >
+                                </li>
+                                <li><a href="#matematik" class="text-decoration-none">3. Performans Modellemesi</a></li>
+                                <li><a href="#uygulama" class="text-decoration-none">4. Uygulama ve Kod Örneği</a></li>
+                                <li><a href="#sonuc" class="text-decoration-none">5. Sonuç ve Öneriler</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <article class="article-content">
+                        <header class="mb-5">
+                            <span class="badge bg-primary mb-2">DevOps</span>
+                            <h1>Docker ile Containerization: Dağıtımı Nasıl Basitleştirirsiniz?</h1>
+                            <p class="text-muted">Mehmet Demir • 31 Ekim 2025 • 10 dakika okuma</p>
+                        </header>
+
+                        <section id="giris">
+                            <h2>1. Giriş: Uygulama Ortamlarının İzole Edilmesi</h2>
+                            <p>
+                                Docker, uygulamaların bağımlılıklarıyla birlikte paketlenip izole edilmiş ortamlar olan
+                                konteynerler içinde çalıştırılmasına olanak tanıyan lider bir platformdur. "Benim
+                                makinemde çalışıyordu" sorununu ortadan kaldırır ve deployment (dağıtım) süreçlerinde
+                                tutarlılık sağlar.
+                            </p>
+
+                            <blockquote class="blockquote border-start border-primary border-5 ps-3 py-2 my-4">
+                                <p class="mb-0 fst-italic">
+                                    "Containerization, modern yazılım mimarilerinde ölçeklenebilirlik ve
+                                    tekrarlanabilirlik için temel bir ön koşuldur."
+                                </p>
+                                <footer class="blockquote-footer mt-1">Sektörel Araştırma Raporu, 2024</footer>
+                            </blockquote>
+
+                            <img
+                                src="https://picsum.photos/800/400?random=10"
+                                alt="Docker konteyner mimarisi şeması"
+                                class="img-fluid rounded mt-3" />
+                            <p class="text-muted small text-center">
+                                Şekil 1: Docker Konteyner Mimarisi ve Katmanlı Dosya Sistemi
+                            </p>
+                        </section>
+
+                        <section id="avantajlar" class="mt-5">
+                            <h3>2. Konteynerleştirmenin Temel Avantajları</h3>
+                            <p>
+                                Konteynerler, sanal makinelere (VM) göre daha hafif ve daha hızlıdır. İşletim sistemi
+                                çekirdeğini paylaşarak kaynak kullanımını minimize ederler.
+                            </p>
+
+                            <h4>Konteyner vs. Sanal Makine Kıyaslaması</h4>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered small">
+                                    <thead>
+                                        <tr>
+                                            <th>Özellik</th>
+                                            <th>Konteyner</th>
+                                            <th>Sanal Makine (VM)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Başlangıç Süresi</td>
+                                            <td>Saniyeler</td>
+                                            <td>Dakikalar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>İşletim Sistemi</td>
+                                            <td>Çekirdeği Paylaşır</td>
+                                            <td>Kendi İşletim Sistemi</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hafıza Ayak İzi</td>
+                                            <td>Düşük (MB)</td>
+                                            <td>Yüksek (GB)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section id="matematik" class="mt-5">
+                            <h2>3. Performans Modellemesi ve Sanallaştırma Yükü</h2>
+                            <p>
+                                Bir uygulamanın sanallaştırma üzerindeki performansı genellikle ek yük (overhead) ile
+                                ilişkilidir. Docker konteynerleri, teorik olarak native (çıplak) hızın yaklaşık %95'inde
+                                çalışır.
+                            </p>
+
+                            <h4>Konteyner Performans Kaybı Modeli</h4>
+                            <p>
+                                Toplam Gecikme $(T_{total})$ konteyner başlatma süresi $(T_{init})$ ve konteyner
+                                iletişim ek yükünün $(\lambda_{comm})$ toplamıdır:
+                            </p>
+                            <div class="formula">
+                                $$T_{total} = T_{init} + \int_0^{T_{run}} f(\lambda_{comm}, \text{IO}) \, dt$$
+                            </div>
+                            <p>
+                                Bu model, özellikle yüksek I/O gerektiren uygulamalarda, sanallaştırma ek yükünün
+                                önemini gösterir.
+                            </p>
+                        </section>
+
+                        <section id="uygulama" class="mt-5">
+                            <h3>4. Uygulama: Temel Dockerfile Yapısı</h3>
+                            <p>
+                                Basit bir Python uygulamasını konteynerleştirmek için kullanılan temel Dockerfile
+                                aşağıdaki gibidir:
+                            </p>
+
+                            <pre><code class="language-dockerfile">
+# Python'ın slim (hafif) versiyonunu temel al
+FROM python:3.9-slim
+
+# Çalışma dizinini ayarla
+WORKDIR /app
+
+# Bağımlılıkları kopyala ve kur
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Uygulama kodunu kopyala
+COPY . .
+
+# Uygulamayı çalıştır
+CMD ["python", "app.py"]
+                            </code></pre>
+
+                            <h4>Uygulama Bağımlılıklarının Dağılımı</h4>
+                            <figure>
+                                <img
+                                    src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Kütüphane','İşletim Sistemi','Uygulama Kodu'],datasets:[{data:[35,55,10]}]}}"
+                                    alt="Konteyner Boyut Dağılım Grafiği"
+                                    class="img-fluid rounded mt-3 mb-2" />
+                                <figcaption class="text-muted small text-center">
+                                    Şekil 2: Konteyner Görüntüsündeki Bileşenlerin Yüzde Dağılımı
+                                </figcaption>
+                            </figure>
+                        </section>
+
+                        <section id="sonuc" class="mt-5">
+                            <h2>5. Sonuç ve Öneriler</h2>
+                            <p>
+                                Docker, deployment sürecini devrim niteliğinde basitleştirerek mühendislik ekiplerine
+                                hız ve tutarlılık kazandırır. Konteynerizasyon tekniklerine hakim olmak, modern altyapı
+                                yönetiminin temelidir.
+                            </p>
+                        </section>
+
+                        <section class="mt-5 pt-5 border-top" id="referanslar">
+                            <h3>Kaynaklar ve Referanslar</h3>
+                            <ul class="list-unstyled small">
+                                <li>[1] Docker Resmi Dokümantasyonu: <a href="#">docs.docker.com</a></li>
+                                <li>
+                                    [2] J. S. P. Williams, "Virtualization Performance Overhead Analysis," *IEEE
+                                    Transactions*, 2023.
+                                </li>
+                                <li>[3] Kubernetes Uygulama Kılavuzu: <a href="#">kubernetes.io/docs</a></li>
+                            </ul>
+                        </section>
+                    </article>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>Makale Özeti</h6>
+                            <p class="small text-muted mb-1">
+                                Bu makale, Docker konteynerizasyonunun temel kavramlarını, sanal makine kıyaslamalarını
+                                ve temel performans modellerini incelemektedir.
+                            </p>
+                            <hr class="my-2" />
+                            <ul class="list-unstyled small mb-0">
+                                <li class="mb-1"><i class="bi bi-check-lg me-2 text-success"></i> Bilimsel Yöntem</li>
+                                <li class="mb-1"><i class="bi bi-clock me-2 text-warning"></i> 10 dakika okuma</li>
+                                <li class="mb-1">
+                                    <i class="bi bi-tag me-2 text-info"></i> Konteyner, Docker, DevOps, CI/CD
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h6>Etiketler</h6>
+                            <div>
+                                <span class="badge bg-primary">Docker</span>
+                                <span class="badge bg-primary">DevOps</span>
+                                <span class="badge bg-primary">Container</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h6>Makaleyi Paylaş</h6>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary me-2">
+                                    <i class="bi bi-twitter me-1"></i> Twitter
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-linkedin me-1"></i> LinkedIn
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-placeholder"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+
+        <script src="../js/utils.js"></script>
+
+        <script>
+            // Bileşen yükleme ve mevcut KaTeX/Highlight mantığı
+            document.addEventListener("DOMContentLoaded", function () {
+                // Bileşenleri yükle (article_00X.html, /posts klasöründe olduğu için level=1)
+                if (window.loadComponent) {
+                    loadComponent("navbar-placeholder", "components/_navbar.html", 1);
+                    loadComponent("footer-placeholder", "components/_footer.html", 1);
+                }
+
+                hljs.highlightAll();
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false }
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>

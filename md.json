@@ -1,0 +1,22 @@
+[
+    { 
+        "title": "Sinemada 100 Yıl", 
+        "file": "metodoloji.md", 
+        "category": "Aktüel" 
+    },
+    { 
+        "title": "CFD Analiz Metodolojisi", 
+        "file": "cfd-metodoloji.md", 
+        "category": "Akışkanlar" 
+    },
+    { 
+        "title": "Isı Pompası Verimliliği", 
+        "file": "isi-pompasi.md", 
+        "category": "Termik Sistemler" 
+    },
+    { 
+        "title": "Boru Tesisatı Standartları (ISO)", 
+        "file": "boru-standartlari.md", 
+        "category": "Standartlar" 
+    }
+]

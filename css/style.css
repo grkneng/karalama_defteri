@@ -1,0 +1,643 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --accent-color: #ebca67; /* Kullanılmayan 'news-card' gradyanından ayrıldı */
+    --danger-color: #f5576c; /* Kullanılmayan 'news-card' gradyanından ayrıldı */
+    --light-bg: #f8f9fa;
+    --card-border: #e9ecef;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: #2c3e50;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===== NAVBAR STYLES ===== */
+.navbar {
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.nav-link {
+    transition: var(--transition);
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===== HERO CAROUSEL ===== */
+/* Carousel'daki birden fazla slide'ı korumak için gerekli stiller */
+.hero-carousel {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 40px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.hero-slide {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-slide h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: slideInDown 0.8s ease-out;
+}
+
+.hero-slide p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-color);
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* ===== CARDS (GENEL) ===== */
+.card {
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+    /* translateY(-2px) kaldırıldı, sadece gölge değişimi korundu */
+}
+
+.feed-card {
+    background: white;
+}
+
+.feed-card .card-header {
+    border-bottom: 2px solid var(--card-border);
+}
+
+.feed-card .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Profil Kartı için özel stiller */
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    position: sticky; /* Sticky top yerine direkt kullanılıyor */
+    top: 80px;
+    z-index: 999;
+}
+
+.profile-card img {
+    transition: var(--transition);
+}
+
+/* Kullanılmayan news-card stili kaldırıldı */
+
+/* ===== PROJECT CARD STİLİ (ÖZEL KART) ===== */
+.project-card {
+    background: linear-gradient(135deg, var(--danger-color) 0%, var(--secondary-color) 100%);
+    box-shadow: var(--shadow-lg);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: scale(1.01); /* Hafifletildi */
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.5);
+}
+
+.project-card .btn-light {
+    color: var(--primary-color);
+    border: none;
+    transition: var(--transition);
+}
+
+.project-card .btn-light:hover {
+    background-color: #f0f4ff;
+    transform: translateY(-1px);
+}
+
+/* ===== BADGES ===== */
+.badge {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+/* ===== GALLERY GRID (SAĞ PANEL) ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* ===== FEED CONTAINER (LAZY LOADING) ===== */
+.feed-container {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-sm {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* ===== ARTICLE PAGE / MD CONTENT STYLES ===== */
+.article-content {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+.article-content h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+}
+
+.article-content h2 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.article-content h3 {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.article-content h4 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-content p {
+    margin-bottom: 1rem;
+    color: #34495e; /* Geliştirildi: Okunabilirlik için */
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow-md);
+}
+
+/* Alıntı dipnotu (blockquote-footer) düzeltmesi */
+.article-content .blockquote-footer {
+    background-color: transparent !important;
+    padding-left: 0;
+    color: #999;
+    border-left: none;
+}
+
+/* ===== CODE BLOCKS (HLJS) ===== */
+pre {
+    background: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    /* Geliştirildi: Gölge yumuşatıldı */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+pre code {
+    color: #f8f8f2;
+    background: transparent;
+}
+
+/* ===== FORMULAS (KaTeX) ===== */
+.formula {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    /* Geliştirildi: Kenarlık Secondary color yapıldı */
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.katex {
+    font-size: 1.1em;
+}
+
+/* ===== ACCORDION (GENEL STİL) ===== */
+.accordion-button {
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    border: 1px solid var(--card-border);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f0f4ff;
+    color: var(--secondary-color);
+}
+
+.accordion-button:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+
+.accordion-item {
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.accordion-body {
+    background: white;
+}
+
+/* ===== TAGS ===== */
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin: 0.25rem;
+    background: var(--light-bg);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.tag:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    border-top: 1px solid var(--card-border);
+    margin-top: 5rem;
+    background-color: #1a1a1a !important;
+}
+
+footer .text-muted {
+    color: #adb5bd !important;
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* SOSYAL İKON HOVER EFEKTİ DÜZELTMESİ */
+footer .social-links a {
+    color: #f8f9fa !important; /* text-light'a eşdeğer varsayılan renk */
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+footer .social-links a:hover {
+    color: var(--primary-color) !important;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .hero-slide h1 {
+        font-size: 2.5rem;
+    }
+
+    .article-content {
+        padding: 2rem;
+    }
+
+    .article-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-carousel {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-carousel {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .hero-slide h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-slide p {
+        font-size: 1rem;
+    }
+
+    .article-content {
+        padding: 1.5rem;
+    }
+
+    .article-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.3rem;
+    }
+
+    pre {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sticky-top {
+        position: relative !important;
+        top: auto !important;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .hero-carousel {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .hero-slide h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero-slide p {
+        font-size: 0.85rem;
+    }
+
+    .container-fluid {
+        padding: 0.5rem;
+    }
+
+    .article-content {
+        padding: 1rem;
+    }
+
+    .article-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .btn-group {
+        flex-wrap: wrap;
+    }
+
+    pre {
+        padding: 0.75rem;
+        font-size: 0.75rem;
+        overflow-x: auto;
+    }
+}
+
+/* ===== ACCESSIBILITY / DARK MODE ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-bg: #1a1a1a;
+        --card-border: #333;
+    }
+
+    body {
+        background-color: #111;
+        color: #e0e0e0;
+    }
+
+    .card {
+        background-color: #222;
+        color: #e0e0e0;
+    }
+
+    .article-content {
+        background-color: #222;
+        color: #e0e0e0;
+    }
+
+    .article-content p {
+        color: #b0b0b0;
+    }
+
+    .formula {
+        background-color: #333;
+        border-left-color: var(--secondary-color); /* Geliştirildi */
+    }
+
+    .tag {
+        background-color: #333;
+    }
+}
