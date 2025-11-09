@@ -3,7 +3,7 @@
         {
             "id": 1,
             "type": "text",
-            "title": "JavaScript ES2024 Yenilikler",
+            "title": "JavaScript için ES2024 Yenilikler",
             "description": "JavaScript'in en son özelliklerini keşfedin",
             "content": "JavaScript 2024 sürümü, dil için yeni kapılar açıyor. Promise.withResolvers(), Array.toReversed() ve daha birçok faydalı API eklendi. Modern JavaScript geliştirme artık daha kolay ve güçlü.",
             "author": "Ahmet Yılmaz",

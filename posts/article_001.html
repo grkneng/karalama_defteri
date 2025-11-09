@@ -13,11 +13,12 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" />
         <link rel="stylesheet" href="../css/style.css" />
+        
     </head>
     <body>
         <div id="navbar-placeholder"></div>
 
-        <div class="container-fluid mt-5">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="card profile-card">
@@ -365,26 +366,29 @@ for await (const data of fetchData(urlArray)) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 
-        <script src="../js/utils.js"></script>
+       <script src="../js/utils.js"></script>
 
         <script>
-            // Bileşen yükleme ve mevcut KaTeX/Highlight mantığı
             document.addEventListener("DOMContentLoaded", function () {
-                // Bileşenleri yükle (article_00X.html, /posts klasöründe olduğu için level=1)
-                if (window.loadComponent) {
-                    loadComponent("navbar-placeholder", "components/_navbar.html", 1);
-                    loadComponent("footer-placeholder", "components/_footer.html", 1);
-                }
-
+                // Highlight.js kodları renklendirmek için
                 hljs.highlightAll();
 
-                // KaTeX formülleri işle
-                renderMathInElement(document.body, {
-                    delimiters: [
-                        { left: "$$", right: "$$", display: true },
-                        { left: "$", right: "$", display: false }
-                    ]
-                });
+                // KaTeX formülleri işle (varsa)
+                if (window.renderMathInElement) {
+                    renderMathInElement(document.body, {
+                        delimiters: [
+                            { left: "$$", right: "$$", display: true },
+                            { left: "$", right: "$", display: false }
+                        ]
+                    });
+                }
+
+                // Komponentleri yükle
+                if (window.loadComponent) {
+                    // Artık utils.js içerisindeki mantık yolu kendisi çözecek.
+                    loadComponent("navbar-placeholder", "components/_navbar.html");
+                    loadComponent("footer-placeholder", "components/_footer.html");
+                }
             });
         </script>
     </body>

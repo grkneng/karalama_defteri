@@ -132,7 +132,7 @@ function createCard(post) {
                     <strong>${escapeHtml(post.author)}</strong> • ${formatDate(post.date)} • ${post.readTime} dk oku
                 </small>
                 <a href="${articleLink}" class="btn btn-sm btn-outline-primary">
-                    Devamını Oku →
+                    Detay
                 </a>
             </div>
         </div>

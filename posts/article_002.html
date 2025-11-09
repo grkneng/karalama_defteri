@@ -17,7 +17,7 @@
     <body>
         <div id="navbar-placeholder"></div>
 
-        <div class="container-fluid mt-5">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="card profile-card">
@@ -193,7 +193,7 @@
                                 aşağıdaki gibidir:
                             </p>
 
-                            <pre><code class="language-dockerfile">
+                            <pre><code class="language-python">
 # Python'ın slim (hafif) versiyonunu temel al
 FROM python:3.9-slim
 
@@ -303,21 +303,26 @@ CMD ["python", "app.py"]
         <script src="../js/utils.js"></script>
 
         <script>
-            // Bileşen yükleme ve mevcut KaTeX/Highlight mantığı
             document.addEventListener("DOMContentLoaded", function () {
-                // Bileşenleri yükle (article_00X.html, /posts klasöründe olduğu için level=1)
-                if (window.loadComponent) {
-                    loadComponent("navbar-placeholder", "components/_navbar.html", 1);
-                    loadComponent("footer-placeholder", "components/_footer.html", 1);
+                // Highlight.js kodları renklendirmek için
+                hljs.highlightAll();
+
+                // KaTeX formülleri işle (varsa)
+                if (window.renderMathInElement) {
+                    renderMathInElement(document.body, {
+                        delimiters: [
+                            { left: "$$", right: "$$", display: true },
+                            { left: "$", right: "$", display: false }
+                        ]
+                    });
                 }
 
-                hljs.highlightAll();
-                renderMathInElement(document.body, {
-                    delimiters: [
-                        { left: "$$", right: "$$", display: true },
-                        { left: "$", right: "$", display: false }
-                    ]
-                });
+                // Komponentleri yükle
+                if (window.loadComponent) {
+                    // Artık utils.js içerisindeki mantık yolu kendisi çözecek.
+                    loadComponent("navbar-placeholder", "components/_navbar.html");
+                    loadComponent("footer-placeholder", "components/_footer.html");
+                }
             });
         </script>
     </body>

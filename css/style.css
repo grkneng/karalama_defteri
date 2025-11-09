@@ -48,21 +48,6 @@ body {
     margin: 0 0.5rem;
 }
 
-.nav-link::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary-color);
-    transition: var(--transition);
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
 /* ===== HERO CAROUSEL ===== */
 /* Carousel'daki birden fazla slide'ı korumak için gerekli stiller */
 .hero-carousel {
@@ -161,28 +146,33 @@ body {
 
 /* Kullanılmayan news-card stili kaldırıldı */
 
-/* ===== PROJECT CARD STİLİ (ÖZEL KART) ===== */
-.project-card {
-    background: linear-gradient(135deg, var(--danger-color) 0%, var(--secondary-color) 100%);
-    box-shadow: var(--shadow-lg);
+/* ===== PROJECT PRESENTATION CARD STİLİ (YENİ) ===== */
+.project-presentation-card {
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-md);
     border-radius: 12px;
+    overflow: hidden;
     transition: var(--transition);
+    background-color: white; /* Temiz beyaz arka plan */
 }
 
-.project-card:hover {
-    transform: scale(1.01); /* Hafifletildi */
-    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.5);
+.project-presentation-card .card-img-top {
+    height: 150px; /* Görseli sabit yükseklikte tutar */
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.95); /* Hafif karartma */
 }
 
-.project-card .btn-light {
-    color: var(--primary-color);
-    border: none;
-    transition: var(--transition);
+.project-presentation-card .card-title {
+    font-size: 1.15rem;
+    color: #2c3e50;
 }
 
-.project-card .btn-light:hover {
-    background-color: #f0f4ff;
-    transform: translateY(-1px);
+.project-presentation-card ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    border-top: 1px solid var(--card-border);
+    padding-top: 1rem;
 }
 
 /* ===== BADGES ===== */
@@ -595,49 +585,5 @@ footer .social-links a:hover {
         padding: 0.75rem;
         font-size: 0.75rem;
         overflow-x: auto;
-    }
-}
-
-/* ===== ACCESSIBILITY / DARK MODE ===== */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --light-bg: #1a1a1a;
-        --card-border: #333;
-    }
-
-    body {
-        background-color: #111;
-        color: #e0e0e0;
-    }
-
-    .card {
-        background-color: #222;
-        color: #e0e0e0;
-    }
-
-    .article-content {
-        background-color: #222;
-        color: #e0e0e0;
-    }
-
-    .article-content p {
-        color: #b0b0b0;
-    }
-
-    .formula {
-        background-color: #333;
-        border-left-color: var(--secondary-color); /* Geliştirildi */
-    }
-
-    .tag {
-        background-color: #333;
     }
 }
