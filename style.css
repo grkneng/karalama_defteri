@@ -1,0 +1,288 @@
+/* --- style.css - Final (Roboto Edition) --- */
+
+/* 1. FONT IMPORTS (Sadece Roboto Ailesi) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 2. GENEL AYARLAR */
+body {
+    background-color: #f8f9fa;
+    font-family: "Roboto", sans-serif; /* Gövde fontu */
+    color: #0f1419;
+    line-height: 1.6;
+    overflow-y: scroll;
+}
+
+/* Başlıklar için Roboto Condensed */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.card-title,
+.nav-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #536471;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0d6efd;
+}
+
+th {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+}
+
+td {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 0.85rem;
+}
+
+/* 3. NAVBAR (index.html ile aynı) */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95); /* Hafif transparan */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eff3f4;
+}
+
+/* 4. HERO SECTION */
+.hero {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0));
+    border-bottom: 1px solid #eff3f4;
+}
+
+/* 5. PANEL & KARTLAR (Ortak) */
+.panel {
+    background-color: #fff;
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+    border: 1px solid #dee2e6;
+}
+
+.panel:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+/* Blog Akış Konteynerı */
+.feed-column {
+    background-color: #ffffff;
+    min-height: 100vh;
+    border: 1px solid #dee2e6;
+}
+
+/* Blog Gönderi Kartı */
+.post-card {
+    padding: 20px;
+    border-bottom: 1px solid #eff3f4;
+    transition: background-color 0.2s;
+    background: #fff;
+}
+
+.post-card:hover {
+    background-color: #f7f9f9;
+}
+
+/* 6. YAZAR & PROFİL */
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info {
+    line-height: 1.2;
+}
+.author-name {
+    font-weight: 700;
+    color: #0f1419;
+    font-size: 1rem;
+    display: block;
+}
+.author-handle {
+    color: #536471;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: block;
+}
+
+/* 7. İÇERİK & MEDYA */
+.post-title {
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+.post-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0f1419;
+    margin-bottom: 12px;
+}
+.post-media-container {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #cfd9de;
+    margin-top: 10px;
+}
+.post-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.post-meta {
+    color: #536471;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
+
+/* 8. ÖZEL BİLEŞENLER */
+.math-block {
+    margin: 1.75rem 0;
+}
+.chart-wrapper {
+    min-height: 300px;
+}
+
+/* Navigasyon Kartları (Footer üstü) */
+.nav-card {
+    display: block;
+    padding: 20px;
+    border: 1px solid #eff3f4;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    height: 100%;
+    background: #fff;
+}
+.nav-card:hover {
+    border-color: #cfd9de;
+    background-color: #f7f9f9;
+}
+.nav-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8b98a5;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.nav-desc {
+    display: block;
+    font-size: 0.9rem;
+    color: #536471;
+    line-height: 1.4;
+}
+
+/* Kod Blokları (Roboto Mono) */
+pre code.hljs {
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: 0.85rem;
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.5;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 15px !important;
+}
+
+/* Sidebar & TOC */
+.sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem; /* Navbar yüksekliği kadar */
+    z-index: 100;
+}
+
+#toc-list .nav-link {
+    color: #6c757d;
+    font-size: 0.9rem;
+    padding: 0.2rem 1rem;
+    border-left: 2px solid #e9ecef;
+    transition: all 0.2s ease;
+}
+#toc-list .nav-link:hover {
+    color: #000;
+    border-left-color: #adb5bd;
+}
+#toc-list .nav-link.active {
+    color: #0d6efd;
+    font-weight: 600;
+    border-left-color: #0d6efd;
+    background-color: transparent;
+}
+#toc-list .nav-link.indent {
+    padding-left: 2rem;
+    font-size: 0.85rem;
+}
+
+.loading-sentinel {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Footer İkonları */
+footer i {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+footer i:hover {
+    opacity: 0.7;
+}
+
+/* Doküman Konteynerı */
+.doc-container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    border-left: 1px solid #eff3f4;
+    border-right: 1px solid #eff3f4;
+    padding: 30px; /* İçerik için biraz daha ferah boşluk */
+}
+
+/* --- ÖZEL KOD BLOĞU (Fonsuz & Çerçevesiz) --- */
+pre {
+    margin: 25px 0;
+    padding: 0;
+    background: transparent !important; /* Arka planı zorla kaldır */
+    border: none !important; /* Çerçeveyi kaldır */
+}
+
+/* Highlight.js override */
+pre code.hljs {
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: 0.9rem;
+    font-family: "Menlo", "Monaco", "Courier New", monospace;
+    line-height: 1.5;
+    /* Sol tarafa ince bir referans çizgisi (okumayı kolaylaştırır) */
+    border-left: 2px solid #e0e0e0;
+    padding-left: 15px !important;
+}
+
+/* --- KAYNAKÇA --- */
+.references-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.references-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #536471;
+}
+.references-list li::before {
+    content: "•";
+    color: #0d6efd;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

@@ -1,0 +1,286 @@
+[
+    {
+        "id": 1,
+        "author": "Kullanıcı Adı",
+        "email": "@user_name",
+        "avatar": "https://i.pravatar.cc/156?u=2",
+        "title": "Örnek Makale",
+        "text": "Neye benzediğimi merak ediyormuşsun, kendime benziyorum 😉",
+        "media_type": "image",
+        "media_url": [
+            "https://picsum.photos/200?random=4"
+        ],
+        "read_more": "articles/001.html",
+        "meta_text": "10:42 ÖÖ · 11 Ara 2025 · Liora"
+    },
+    {
+        "id": 2,
+        "author": "Ayşe Demir",
+        "email": "ayse.art@studio.com",
+        "avatar": "https://i.pravatar.cc/150?u=2",
+        "title": "Sabah Eskizleri",
+        "text": "Güne başlarken kahve eşliğinde yapılan hızlı karalamalar zihni açıyor. Bugünün konusu şehir silüetleri.",
+        "media_type": "gallery",
+        "media_url": [
+            "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/002.html",
+        "meta_text": "08:15 ÖÖ · 11 Ara 2025 · ArtStation"
+    },
+    {
+        "id": 3,
+        "author": "Aysun Pelin",
+        "email": "@aysun_p",
+        "avatar": "https://i.pravatar.cc/150?u=4",
+        "title": "Ofis Günlüğü",
+        "text": "Kahve keyfi",
+        "media_type": "image",
+        "media_url": [
+            "https://picsum.photos/430/210?random=4"
+        ],
+        "read_more": "articles/003.html",
+        "meta_text": "2 gün önce gönderildi"
+    },
+    {
+        "id": 4,
+        "author": "Ebru T.",
+        "email": "@ebruultii",
+        "avatar": "https://i.pravatar.cc/150?u=54",
+        "title": "Ev Yapımı Pizza",
+        "text": "Hamuru 48 saat soğuk fermente ettim. Sonuç inanılmaz! İşte o anlar...",
+        "media_type": "video",
+        "media_url": [
+            "https://www.youtube.com/embed/1-hTpcztdFw?si=example"
+        ],
+        "read_more": "articles/004.html",
+        "meta_text": "Yemek Tarifleri · 45 Beğeni"
+    },
+    {
+        "id": 5,
+        "author": "Sevcan Y.",
+        "email": "@sevcan",
+        "avatar": "https://i.pravatar.cc/150?u=32",
+        "title": "Godot'u Beklerken",
+        "text": "Bu fotoğrafı da kim çekti diye sormazsın herhalde.",
+        "media_type": "image",
+        "media_url": [
+            "https://picsum.photos/430/210?random=1"
+        ],
+        "read_more": "articles/005.html",
+        "meta_text": "Setup Wars · #Workspace"
+    },
+    {
+        "id": 6,
+        "author": "Elif Y.",
+        "email": "elif@travel.blog",
+        "avatar": "https://i.pravatar.cc/150?u=6",
+        "title": "Kapadokya Balon Turu",
+        "text": "Güneş doğarken gökyüzünde süzülmek... Kelimelerle anlatılamayacak bir deneyim.",
+        "media_type": "gallery",
+        "media_url": [
+            "https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/006.html",
+        "meta_text": "Seyahat Günlüğü · Nevşehir"
+    },
+    {
+        "id": 7,
+        "author": "Mehmet V.",
+        "email": "mehmet@music.io",
+        "avatar": "https://i.pravatar.cc/150?u=7",
+        "title": "Lo-Fi Çalışma Listesi",
+        "text": "Odaklanmak için hazırladığım favori listem. Arkada çalsın, işler aksın.",
+        "media_type": "video",
+        "media_url": [
+            "https://www.youtube.com/embed/5qap5aO4i9A"
+        ],
+        "read_more": "articles/007.html",
+        "meta_text": "Müzik · Spotify Entegrasyonu"
+    },
+    {
+        "id": 8,
+        "author": "Hayrettin",
+        "email": "selin@books.com",
+        "avatar": "https://i.pravatar.cc/150?u=8",
+        "title": "Beni bu güzel havalar",
+        "text": "Distopik romanları sevenler için kaçırılmayacak bir eser. George Orwell sevenler buraya.",
+        "media_type": "image",
+        "media_url": [
+            "https://picsum.photos/640/420"
+        ],
+        "read_more": "articles/008.html",
+        "meta_text": "Kitap Kulübü · 12 Yorum"
+    },
+    {
+        "id": 9,
+        "author": "Ozan T.",
+        "email": "ozan@fitness.gym",
+        "avatar": "https://i.pravatar.cc/150?u=9",
+        "title": "Sabah Koşusu",
+        "text": "Yağmura rağmen 5K tamamlandı. Bahanelere yer yok!",
+        "media_type": "image",
+        "media_url": [
+            "https://picsum.photos/640/480"
+        ],
+        "read_more": "articles/009.html",
+        "meta_text": "Strava Kaydı · İstanbul"
+    },
+    {
+        "id": 10,
+        "author": "Zeynep K.",
+        "email": "zeynep@arch.design",
+        "avatar": "https://i.pravatar.cc/150?u=10",
+        "title": "Modern Mimari Örneği",
+        "text": "Brütalist beton yapıların yeşille buluşması. Tasarım harikası.",
+        "media_type": "gallery",
+        "media_url": [
+            "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/010.html",
+        "meta_text": "Mimarlık · Berlin"
+    },
+    {
+        "id": 11,
+        "author": "Hakan B.",
+        "email": "hakan@retro.gaming",
+        "avatar": "https://i.pravatar.cc/150?u=11",
+        "title": "Retro Oyun Gecesi",
+        "text": "Eski kasetleri çıkardık. Commodore 64 hala çalışıyor!",
+        "media_type": "image",
+        "media_url": [
+            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/011.html",
+        "meta_text": "Nostalji · 8-bit"
+    },
+    {
+        "id": 12,
+        "author": "Derya S.",
+        "email": "derya@plant.mom",
+        "avatar": "https://i.pravatar.cc/150?u=12",
+        "title": "Monstera Bakımı",
+        "text": "Yeni yaprak açtı! Monstera deliciosa sevenler için toprak karışımı önerim aşağıda.",
+        "media_type": "image",
+        "media_url": [
+            "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/012.html",
+        "meta_text": "Bitki Bakımı · Ev Yeşillendirme"
+    },
+    {
+        "id": 13,
+        "author": "Kemal A.",
+        "email": "kemal@auto.drive",
+        "avatar": "https://i.pravatar.cc/150?u=13",
+        "title": "Klasik Otomobil Fuarı",
+        "text": "1967 model Mustang'in motor sesi... İnanılmaz bir atmosfer.",
+        "media_type": "video",
+        "media_url": [
+            "https://www.youtube.com/embed/yijx9MmbVrc?si=pHUcz0wlK2xpewlH"
+        ],
+        "read_more": "articles/013.html",
+        "meta_text": "Otomobil · Fuar Merkezi"
+    },
+    {
+        "id": 14,
+        "author": "Esra M.",
+        "email": "esra@coffee.bean",
+        "avatar": "https://i.pravatar.cc/150?u=14",
+        "title": "3. Dalga Kahve",
+        "text": "Chemex ile demleme teknikleri. Suyun sıcaklığı 93 derece olmalı.",
+        "media_type": "image",
+        "media_url": [
+            "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/014.html",
+        "meta_text": "Barista Günlükleri · Kadıköy"
+    },
+    {
+        "id": 15,
+        "author": "Burak Ç.",
+        "email": "burak@crypto.coin",
+        "avatar": "https://i.pravatar.cc/150?u=15",
+        "title": "Piyasa Analizi",
+        "text": "Bitcoin grafiğinde ilginç hareketler var. Bu hafta kritik.",
+        "media_type": "image",
+        "media_url": [
+            "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/015.html",
+        "meta_text": "Finans · Yatırım Tavsiyesi Değildir"
+    },
+    {
+        "id": 16,
+        "author": "Nilgün P.",
+        "email": "nilgun@cat.lover",
+        "avatar": "https://i.pravatar.cc/150?u=16",
+        "title": "Pazar Keyfi",
+        "text": "Bizimki yine en rahat yeri kaptı. Kedi olmak varmış.",
+        "media_type": "gallery",
+        "media_url": [
+            "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/016.html",
+        "meta_text": "Kedi Dünyası · #CatsofInstagram"
+    },
+    {
+        "id": 17,
+        "author": "Serkan D.",
+        "email": "serkan@photo.shoot",
+        "avatar": "https://i.pravatar.cc/150?u=17",
+        "title": "Uzun Pozlama Denemesi",
+        "text": "Şehrin ışıkları ve akan trafik. Tripodsuz bu kadar oldu.",
+        "media_type": "image",
+        "media_url": [
+            "https://picsum.photos/200/300"
+        ],
+        "read_more": "articles/017.html",
+        "meta_text": "Fotoğrafçılık · ISO 100"
+    },
+    {
+        "id": 18,
+        "author": "Gizem O.",
+        "email": "gizem@diy.craft",
+        "avatar": "https://i.pravatar.cc/150?u=18",
+        "title": "Makrome Duvar Süsü",
+        "text": "Kendi yaptığım duvar süsü bitti. Salonun havasını değiştirdi.",
+        "media_type": "image",
+        "media_url": [
+            "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/018.html",
+        "meta_text": "Kendin Yap · Hobi"
+    },
+    {
+        "id": 19,
+        "author": "Tuna L.",
+        "email": "tuna@scifi.geek",
+        "avatar": "https://i.pravatar.cc/150?u=19",
+        "title": "Robotik Gelecek",
+        "text": "Boston Dynamics'in son videosunu izlediniz mi? Korkutucu ama etkileyici.",
+        "media_type": "video",
+        "media_url": [
+            "https://www.youtube.com/embed/tF4DML7FIWk"
+        ],
+        "read_more": "articles/019.html",
+        "meta_text": "Teknoloji · Robotik"
+    },
+    {
+        "id": 20,
+        "author": "Pınar R.",
+        "email": "pinar@yoga.zen",
+        "avatar": "https://i.pravatar.cc/150?u=20",
+        "title": "Gün Batımı Yogası",
+        "text": "Zihni boşaltmak için en iyi zaman. Namaste.",
+        "media_type": "image",
+        "media_url": [
+            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+        ],
+        "read_more": "articles/020.html",
+        "meta_text": "Yoga · Meditasyon"
+    }
+]
