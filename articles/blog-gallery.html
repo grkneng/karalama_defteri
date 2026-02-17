@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>JavaScript Event Loop Derinlemesine İnceleme</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+        <!-- LightGallery -->
+        <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="border-bottom">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand fw-semibold" href="index.html">Karalama Defteri </a>
+                    <!-- Mobil Toggle -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav"
+                        aria-controls="mainNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Ana Menü -->
+                    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                        <ul class="navbar-nav gap-lg-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../researches.html">Araştırmalar</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../projects.html">Projeler</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../references.html">Referanslar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../contact.html">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Main Container -->
+        <main class="container my-4">
+            <div class="row">
+                <!-- Sol Panel -->
+                <aside class="col-lg-3 d-none d-lg-block">
+                    <!-- TOC -->
+                    <section class="p-3">
+                        <div class="card-body">
+                            <h6 class="card-title mb-3">İçindekiler</h6>
+                            <nav id="toc" class="small"></nav>
+                        </div>
+                    </section>
+                    <!-- Download List -->
+                    <section class="card border-0">
+                        <div class="card-body">
+                            <h6 class="card-title mb-3">Dosyalar</h6>
+                            <ul class="list-unstyled small mb-0">
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-start gap-2">
+                                        <a
+                                            href="./files/event-loop-paper.pdf"
+                                            download
+                                            class="text-decoration-none text-dark">
+                                            <i class="bi bi-file-earmark-pdf"></i>
+                                        </a>
+                                        <div>
+                                            <div class="fw-semibold">Event Loop Whitepaper</div>
+                                            <div class="text-muted">PDF · 1.2 MB · Akademik makale</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-start gap-2">
+                                        <a
+                                            href="./files/queue-simulation.xlsx"
+                                            download
+                                            class="text-decoration-none text-dark">
+                                            <i class="bi bi-file-earmark-excel"></i>
+                                        </a>
+                                        <div>
+                                            <div class="fw-semibold">Kuyruk Simülasyonu</div>
+                                            <div class="text-muted">XLSX · Simülasyon verileri</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-start gap-2">
+                                        <a
+                                            href="./files/lecture-notes.docx"
+                                            download
+                                            class="text-decoration-none text-dark">
+                                            <i class="bi bi-file-earmark-word"></i>
+                                        </a>
+                                        <div>
+                                            <div class="fw-semibold">Ders Notları</div>
+                                            <div class="text-muted">DOCX · Konu özeti</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </aside>
+                <!-- Main Container -->
+                <article class="col-lg-6">
+                    <!-- Başlık -->
+                    <header class="mb-4">
+                        <h1 class="fw-bold mb-3">JavaScript Event Loop Derinlemesine İnceleme</h1>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-secondary">javascript</span>
+                            <span class="badge bg-secondary">performance</span>
+                            <span class="badge bg-secondary">web</span>
+                        </div>
+                        <div class="text-muted small">Author ID · 12 yorum · 15 Ocak 2026</div>
+                    </header>
+                    <!-- Öne Çıkan Görsel -->
+                    <figure class="mb-4">
+                        <img
+                            src="https://picsum.photos/1200/600"
+                            class="img-fluid rounded"
+                            alt="JavaScript Event Loop Diyagramı"
+                            loading="lazy" />
+                        <figcaption class="text-muted small mt-2">Event Loop mekanizmasının temel akışı.</figcaption>
+                    </figure>
+                    <!-- İçerik -->
+                    <section class="mb-4">
+                        <p>
+                            JavaScript tek iş parçacıklı bir çalışma modeline sahiptir. Event Loop; Call Stack, Callback
+                            Queue ve Microtask Queue arasında koordinasyon sağlar.
+                        </p>
+                    </section>
+                    <!-- Mini Galeri -->
+                    <section class="mb-5">
+                        <h2 class="h5 mb-3">İlgili Diyagramlar</h2>
+                        <div id="lightgallery" class="row g-2">
+                            <a href="https://picsum.photos/1200/800?1" class="col-4">
+                                <img
+                                    src="https://picsum.photos/400/300?1"
+                                    class="img-fluid rounded"
+                                    loading="lazy"
+                                    alt="Diyagram 1" />
+                            </a>
+                            <a href="https://picsum.photos/1200/800?2" class="col-4">
+                                <img
+                                    src="https://picsum.photos/400/300?2"
+                                    class="img-fluid rounded"
+                                    loading="lazy"
+                                    alt="Diyagram 2" />
+                            </a>
+                            <a href="https://picsum.photos/1200/800?3" class="col-4">
+                                <img
+                                    src="https://picsum.photos/400/300?3"
+                                    class="img-fluid rounded"
+                                    loading="lazy"
+                                    alt="Diyagram 3" />
+                            </a>
+                        </div>
+                    </section>
+                    <!-- İçerik -->
+                    <section class="mb-5">
+                        <p>
+                            Performans sorunları çoğu zaman kuyruğun yanlış anlaşılmasından doğar. Uzun süren senkron
+                            işlemler UI’yi bloke eder.
+                        </p>
+                    </section>
+                    <!-- Kaynakça -->
+                    <section class="mt-5">
+                        <h3 class="h5 border-bottom pb-2 mb-3">Kaynakça</h3>
+                        <ol class="small">
+                            <li id="ref-mdn">
+                                Mozilla Developer Network. (2024).
+                                <em>Concurrency model and Event Loop.</em>
+                                Erişim: https://developer.mozilla.org/
+                            </li>
+                            <li id="ref-roberts">
+                                Roberts, P. (2018).
+                                <em>What the heck is the event loop?</em>
+                                JSConf EU.
+                            </li>
+                            <li id="ref-kleinrock">
+                                Kleinrock, L. (1975).
+                                <em>Queueing Systems, Volume I: Theory.</em>
+                                Wiley-Interscience.
+                            </li>
+                        </ol>
+                    </section>
+                </article>
+                <!-- Sağ Panel-->
+                <aside class="col-lg-3 d-none d-lg-block">
+                    <!-- Author ID -->
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img
+                                src="https://picsum.photos/100"
+                                class="rounded-circle mb-3"
+                                width="100"
+                                height="100"
+                                alt="Yazar Avatarı"
+                                loading="lazy" />
+                            <h6 class="fw-bold mb-0">Yazar Adı</h6>
+                            <div class="text-muted small mb-2">Ünvanı</div>
+                            <p class="small mb-3">Açıklama</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+                                <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="text-dark"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="border-top mt-3">
+            <div class="container py-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center small">
+                    <!-- Sol -->
+                    <div>
+                        <span class="fw-semibold">Karalama Defteri</span>
+                        <span class="text-muted"> | CC BY 4.0 & MIT</span>
+                    </div>
+                    <!-- Sağ -->
+                    <div class="d-flex gap-3">
+                        <a href="../terms.html" class="text-muted"> Şartlar ve Koşullar </a>
+                        <a href="../glossary.html" class="text-muted"> Terimler Sözlüğü </a>
+                        <a href="../contact.html" class="text-muted"> İletişim </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- LightGallery JS -->
+        <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+
+        <!-- TOC & LightGallery Script -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const toc = document.getElementById("toc");
+                const headings = document.querySelectorAll("article h2");
+
+                headings.forEach((h) => {
+                    const link = document.createElement("a");
+                    link.href = "#" + h.id;
+                    link.textContent = h.textContent;
+                    link.className = "d-block text-decoration-none mb-1";
+                    toc.appendChild(link);
+                });
+            });
+
+            lightGallery(document.getElementById("lightgallery"), {
+                plugins: [lgZoom, lgThumbnail],
+                speed: 300,
+                download: false
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "term": "API",
+    "definition": "Application Programming Interface. Yazılımlar arasında iletişim kurmayı sağlayan arayüz."
+  },
+  {
+    "term": "Asenkron",
+    "definition": "İşlemlerin bloklanmadan, eş zamanlı olmayan şekilde yürütülmesi."
+  },
+  {
+    "term": "Callback",
+    "definition": "Bir işlemin tamamlanmasından sonra çalıştırılan fonksiyon."
+  },
+  {
+    "term": "Call Stack",
+    "definition": "Fonksiyon çağrılarının tutulduğu LIFO veri yapısı."
+  },
+  {
+    "term": "Closure",
+    "definition": "Bir fonksiyonun kendi kapsamı dışındaki değişkenlere erişebilmesi durumu."
+  },
+  {
+    "term": "DOM",
+    "definition": "Document Object Model. HTML belgesinin ağaç yapısındaki temsili."
+  },
+  {
+    "term": "Event Loop",
+    "definition": "Call Stack ve görev kuyrukları arasında koordinasyon sağlayan mekanizma."
+  },
+  {
+    "term": "Hoisting",
+    "definition": "Değişken ve fonksiyon bildirimlerinin çalışma zamanında yukarı taşınması davranışı."
+  },
+  {
+    "term": "Microtask",
+    "definition": "Promise callback'leri gibi, macro task'lardan önce çalışan görev kuyruğu."
+  },
+  {
+    "term": "Promise",
+    "definition": "Asenkron bir işlemin sonucunu temsil eden obje."
+  },
+  {
+    "term": "REST",
+    "definition": "Representational State Transfer. HTTP tabanlı mimari stil."
+  },
+  {
+    "term": "Senkron",
+    "definition": "İşlemlerin sıralı ve bloklayıcı şekilde yürütülmesi."
+  },
+  {
+    "term": "SPA",
+    "definition": "Single Page Application. Tek sayfa uygulama mimarisi."
+  },
+  {
+    "term": "Throttle",
+    "definition": "Bir fonksiyonun belirli aralıklarla çalışmasını sınırlama tekniği."
+  },
+  {
+    "term": "Virtual DOM",
+    "definition": "Gerçek DOM üzerinde değişiklik yapmadan önce hesaplama yapılan sanal temsil."
+  }
+]

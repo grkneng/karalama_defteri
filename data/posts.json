@@ -1,0 +1,173 @@
+[
+    {
+        "type": "post",
+        "tags": [
+            "javascript",
+            "performance",
+            "web"
+        ],
+        "title": "JavaScript Event Loop Derinlemesine İnceleme",
+        "author": "Author ID",
+        "media": null,
+        "summary": "Event Loop mekanizmasının call stack, callback queue ve microtask queue ile nasıl çalıştığını teknik örneklerle açıklıyoruz.",
+        "readmore": "./posts/js-event-loop.html",
+        "comments": 12
+    },
+    {
+        "type": "post",
+        "tags": [
+            "python",
+            "asyncio",
+            "backend"
+        ],
+        "title": "Python asyncio ile Asenkron Programlama",
+        "author": "Author ID",
+        "media": {
+            "type": "image",
+            "url": "https://picsum.photos/600/400?id=1",
+            "alt": "Asyncio event loop diyagramı"
+        },
+        "summary": "async ve await kavramlarının event loop ile ilişkisini ve performans etkilerini inceliyoruz.",
+        "readmore": "https://realpython.com/async-io-python/",
+        "comments": 8
+    },
+    {
+        "type": "post",
+        "tags": [
+            "docker",
+            "devops",
+            "containers"
+        ],
+        "title": "Docker Katman Mantığı ve Image Optimizasyonu",
+        "author": "Author ID",
+        "media": {
+            "type": "gallery",
+            "images": [
+                "https://picsum.photos/400?id=1",
+                "https://picsum.photos/400?id=2",
+                "https://picsum.photos/400?id=3"
+            ]
+        },
+        "summary": "Docker image katman yapısını ve build sürecinde cache kullanımının nasıl optimize edileceğini ele alıyoruz.",
+        "readmore": "./posts/docker-image-optimization.html",
+        "comments": 15
+    },
+    {
+        "type": "post",
+        "tags": [
+            "react",
+            "frontend",
+            "hooks"
+        ],
+        "title": "React useEffect Tuzakları",
+        "author": "Author ID",
+        "media": {
+            "type": "video",
+            "embed": "https://www.youtube.com/embed/dpw9EHDh2bM"
+        },
+        "summary": "useEffect dependency array kullanımında yapılan yaygın hataları ve çözüm yollarını örnek kodlarla inceliyoruz.",
+        "readmore": null,
+        "comments": 21
+    },
+    {
+        "type": "post",
+        "tags": [
+            "sql",
+            "database",
+            "index"
+        ],
+        "title": "SQL Index Nasıl Çalışır?",
+        "author": "Author ID",
+        "media": null,
+        "summary": "B-Tree yapısı üzerinden index mantığını ve sorgu performansına etkisini açıklıyoruz.",
+        "readmore": "./posts/sql-index.html",
+        "comments": 5
+    },
+    {
+        "type": "post",
+        "tags": [
+            "linux",
+            "kernel",
+            "systems"
+        ],
+        "title": "Linux Scheduler Mantığı",
+        "author": "Author ID",
+        "media": {
+            "type": "image",
+            "url": "https://picsum.photos/600/400?id=2",
+            "alt": "Linux scheduler akış diyagramı"
+        },
+        "summary": "CFS (Completely Fair Scheduler) algoritmasının temel prensiplerini ele alıyoruz.",
+        "readmore": "https://www.kernel.org/doc/html/latest/scheduler/index.html",
+        "comments": 9
+    },
+    {
+        "type": "post",
+        "tags": [
+            "api",
+            "rest",
+            "http"
+        ],
+        "title": "REST API Tasarımında En İyi Pratikler",
+        "author": "Author ID",
+        "media": null,
+        "summary": "HTTP metodlarının doğru kullanımı ve versiyonlama stratejileri üzerine teknik öneriler.",
+        "readmore": "./posts/rest-api-best-practices.html",
+        "comments": 18
+    },
+    {
+        "type": "post",
+        "tags": [
+            "git",
+            "version-control"
+        ],
+        "title": "Git Rebase vs Merge Farkları",
+        "author": "Author ID",
+        "media": {
+            "type": "gallery",
+            "images": [
+                "https://picsum.photos/600/320?id=1",
+                "https://picsum.photos/600/320?id=2",
+                "https://picsum.photos/600/320?id=3"
+            ]
+        },
+        "summary": "Rebase ve merge işlemlerinin commit geçmişine etkilerini grafiklerle inceliyoruz.",
+        "readmore": null,
+        "comments": 14
+    },
+    {
+        "type": "post",
+        "tags": [
+            "cybersecurity",
+            "encryption",
+            "tls"
+        ],
+        "title": "TLS Handshake Süreci",
+        "author": "Author ID",
+        "media": {
+            "type": "video",
+            "url": "/media/tls-handshake.mp4"
+        },
+        "summary": "TLS el sıkışma sürecinin adımlarını ve anahtar değişim mekanizmasını detaylandırıyoruz.",
+        "readmore": "./posts/tls-handshake.html",
+        "comments": 11
+    },
+    {
+        "type": "post",
+        "tags": [
+            "ai",
+            "machine-learning",
+            "neural-networks"
+        ],
+        "title": "Yapay Sinir Ağlarında Backpropagation",
+        "author": "Author ID",
+        "media": {
+            "type": "image",
+            "url": "https://picsum.photos/300/420?id=1",
+            "alt": "Backpropagation akış diyagramı"
+        },
+        "summary": "Backpropagation algoritmasının matematiksel temelini ve gradient descent ile ilişkisini açıklıyoruz.",
+        "readmore": "https://towardsdatascience.com/backpropagation-explained-9704caa8b1e4",
+        "comments": 27
+    }
+]

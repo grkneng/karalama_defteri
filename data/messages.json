@@ -1,0 +1,142 @@
+[
+    {
+        "author": "Editor",
+        "date": "2026-01-02",
+        "image": "https://picsum.photos/400/200?id=1",
+        "message": "Event Loop yazısına yeni diyagram ekledim.",
+        "editor": true
+    },
+    {
+        "author": "Ahmet Yılmaz",
+        "date": "2026-01-03",
+        "image": null,
+        "message": "Diyagram gerçekten açıklayıcı olmuş.",
+        "editor": false
+    },
+    {
+        "author": "Elif Demir",
+        "date": "2026-01-03",
+        "image": "https://picsum.photos/400?id=1",
+        "message": "Promise örneğini bu görselle daha iyi anladım.",
+        "editor": false
+    },
+    {
+        "author": "Editor",
+        "date": "2026-01-04",
+        "image": null,
+        "message": "Web Worker ile ilgili bir örnek de paylaşacağım.",
+        "editor": true
+    },
+    {
+        "author": "Mehmet Kaya",
+        "date": "2026-01-05",
+        "image": null,
+        "message": "Docker multi-stage build örneği çok işime yaradı.",
+        "editor": false
+    },
+    {
+        "author": "Zeynep Arslan",
+        "date": "2026-01-06",
+        "image": "https://picsum.photos/400/600?id=2",
+        "message": "Layer yapısını bu görselle daha net gördüm.",
+        "editor": false
+    },
+    {
+        "author": "Editor",
+        "date": "2026-01-07",
+        "image": null,
+        "message": "SQL index performans testi sonuçlarını ekledim.",
+        "editor": true
+    },
+    {
+        "author": "Can Polat",
+        "date": "2026-01-08",
+        "image": null,
+        "message": "Index karşılaştırma tablosu faydalı olmuş.",
+        "editor": false
+    },
+    {
+        "author": "Ayşe Karaca",
+        "date": "2026-01-09",
+        "image": "https://picsum.photos/400?id=4",
+        "message": "Versiyonlama stratejisini bu grafikle daha iyi anladım.",
+        "editor": false
+    },
+    {
+        "author": "Editor",
+        "date": "2026-01-10",
+        "image": null,
+        "message": "API yazısında küçük bir güncelleme yaptım.",
+        "editor": true
+    },
+    {
+        "author": "Burak Şahin",
+        "date": "2026-01-11",
+        "image": null,
+        "message": "Git rebase görselleri çok açıklayıcıydı.",
+        "editor": false
+    },
+    {
+        "author": "Derya Aydın",
+        "date": "2026-01-12",
+        "image": "https://picsum.photos/400?id=5",
+        "message": "TLS handshake akışı diyagramı harika.",
+        "editor": false
+    },
+    {
+        "author": "Editor",
+        "date": "2026-01-13",
+        "image": null,
+        "message": "TLS yazısına performans notları ekledim.",
+        "editor": true
+    },
+    {
+        "author": "Emre Çelik",
+        "date": "2026-01-14",
+        "image": null,
+        "message": "Backpropagation kısmı matematiksel ama anlaşılırdı.",
+        "editor": false
+    },
+    {
+        "author": "Editor",
+        "date": "2026-01-15",
+        "image": "https://picsum.photos/400?id=6",
+        "message": "Gradient descent görselini güncelledim.",
+        "editor": true
+    },
+    {
+        "author": "Selin Koç",
+        "date": "2026-01-16",
+        "image": null,
+        "message": "Asyncio yazısı backend tarafında çok işime yaradı.",
+        "editor": false
+    },
+    {
+        "author": "Onur Güneş",
+        "date": "2026-01-17",
+        "image": null,
+        "message": "Linux scheduler konusu biraz daha derinleşebilir.",
+        "editor": false
+    },
+    {
+        "author": "Editor",
+        "date": "2026-01-18",
+        "image": null,
+        "message": "CFS algoritması için benchmark sonuçları ekleyeceğim.",
+        "editor": true
+    },
+    {
+        "author": "Gizem Yıldız",
+        "date": "2026-01-19",
+        "image": "https://picsum.photos/seed/picsum/330",
+        "message": "Minimal tasarım gerçekten dikkat dağıtmıyor.",
+        "editor": false
+    },
+    {
+        "author": "Editor",
+        "date": "2026-01-20",
+        "image": null,
+        "message": "Tüm geri bildirimler için teşekkürler.",
+        "editor": true
+    }
+]
