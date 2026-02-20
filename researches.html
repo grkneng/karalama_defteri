@@ -13,7 +13,7 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="border-bottom">
+        <header class="border-bottom sticky-top bg-white">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -46,10 +46,11 @@
             <div class="row">
                 <!-- Sol Panel -->
                 <aside class="col-lg-3">
-                    <!-- Kartlar -->
-                    <section class="card mb-3">
+                    <!-- Kategori Etiketi -->
+                    <section class="card mb-3 sticky-top" style="top: 80px; z-index: 100">
                         <div class="card-body">
-                            <h6 class="card-title">Yer Tutucu Kart</h6>
+                            <h6>Kategoriler</h6>
+                            <div id="tagFilters" class="d-flex flex-wrap gap-2"></div>
                         </div>
                     </section>
                 </aside>
@@ -60,11 +61,10 @@
                 </main>
                 <!-- Sağ Panel -->
                 <aside class="col-lg-3">
-                    <!-- Kategori Etiketi -->
+                    <!-- Kartlar -->
                     <section class="card mb-3">
                         <div class="card-body">
-                            <h6>Kategoriler</h6>
-                            <div id="tagFilters" class="d-flex flex-wrap gap-2"></div>
+                            <h6 class="card-title">Yer Tutucu Kart</h6>
                         </div>
                     </section>
                 </aside>
