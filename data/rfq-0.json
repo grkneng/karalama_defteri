@@ -1,0 +1,62 @@
+[
+  {
+    "id": "01",
+    "title": "Isıtma Sistemi Revizyonu",
+    "url": "projects/yenipazar.html",
+    "meta": "Gürkan Engin ▪ 22 Eylül 2026",
+    "summary": "Mevcut ısıtma hattı, yeni poliklinik bloğunun debisini karşılamıyor. Revizyon için ön teklif istendi.",
+    "description": "Hastanenin 2004 yılında kurulan ısıtma sistemi, o günden bu yana iki kez büyütüldü. Son eklenen poliklinik bloğuyla birlikte mevcut boru çapları yetersiz kalıyor. \n\nBasınç kaybı ölçümleri, hat üzerindeki en uzak radyatörün yeterli debiyi alamadığını gösteriyor. İki seçenek masada: mevcut hattı büyütmek veya ikinci bir hat çekmek. İlki daha ekonomik ama tadilat süresi daha uzun; ikincisi pahalı ama poliklinikler kapanmadan yapılabilir.",
+    "media": {
+      "type": "image",
+      "src": "https://picsum.photos/id/402/676",
+      "alt": "Hastane kazan dairesi",
+      "caption": "Figure 01 — Mevcut kazan dairesi ve ana hat bağlantısı"
+    }
+  },
+  {
+    "id": "02",
+    "title": "Kereste Kurutma Fırını",
+    "url": null,
+    "meta": "Gürkan Engin ▪ 22 Eylül 2026",
+    "summary": "Buharla işletilen fırının tesisatı yirmi yaşında. Sızıntılar artmaya başladı; komple revizyon isteniyor.",
+    "description": "Fırın, günde ortalama on iki saat çalışıyor. Tesisatın büyük bölümü orijinal; sadece vana ve conta değişimleri yapılmış. Son iki ayda üç ayrı noktadan buhar kaçağı tespit edildi. Firmadan gelen talep, tesisatın komple yenilenmesi yönünde. Ancak mevcut hattın ısıl yalıtımı hâlâ iyi durumda; sadece taşıyıcı boruların değişmesi yeterli olabilir. Yerinde inceleme yapmadan net bir öneri sunmak doğru olmaz.",
+    "media": null
+  },
+  {
+    "id": "03",
+    "title": "Muayene Masası Örtüleri",
+    "url": "projects/aparat.html",
+    "meta": "Gürkan Engin ▪ 22 Eylül 2026",
+    "summary": "Tek kullanımlık örtülerin masadan kaymasını engelleyecek basit bir aparat. Klinik kullanım için pratik olmalı.",
+    "description": "Muayene masalarındaki tek kullanımlık örtüler, hasta hareket ettiğinde kayıyor. Hem hijyen hem de pratiklik sorunu. Basit bir lastikli tutucu veya kenet sistemi yeterli olabilir. Tasarımın paslanmaz çelik veya medikal plastikten imal edilmesi planlanıyor. Maliyet hedefi: adet başına 50 TL'nin altı. İlk taslak hazır; imalat öncesi klinik personelden geri bildirim bekleniyor.",
+    "media": {
+      "type": "image",
+      "src": "https://picsum.photos/id/1050/1200/675",
+      "alt": "Aparat teknik çizimi",
+      "caption": "Figure 02 — İlk taslak, kenet mekanizması"
+    }
+  },
+  {
+    "id": "04",
+    "title": "Enerji Verimliliği Analizi",
+    "url": null,
+    "meta": "Gürkan Engin ▪ 22 Eylül 2026",
+    "summary": "Atölyenin elektrik tüketimi son iki yılda %30 arttı. Sebebi bilinmiyor; kapsamlı bir analiz isteniyor.",
+    "description": "Atölyede dört dokuma tezgahı, iki boya kazanı ve bir kompresör var. Tüketim artışının kaynağını bulmak için önce sayaç bazlı ölçüm yapılması gerekiyor. İlk gözlem: kompresör, tezgahlar durduğunda bile çalışmaya devam ediyor. Yük paylaşımı ve zamanlama optimizasyonu ciddi tasarruf sağlayabilir. Rapor için iki haftalık bir saha çalışması öngörülüyor; sonuçlar hem atölyeye hem de arşive girecek.",
+    "media": null
+  },
+  {
+    "id": "05",
+    "title": "Havalandırma Sistemi",
+    "url": null,
+    "meta": "Gürkan Engin ▪ 22 Eylül 2026",
+    "summary": "Paketleme bölümünde sıcaklık ve nem kontrol edilemiyor. Mevcut havalandırma sistemi gıda standartlarına uygun değil.",
+    "description": "Bölümde çalışan sayısı son bir yılda iki katına çıktı; mevcut havalandırma artık yetersiz. Yaz aylarında iç sıcaklık 32°C'yi, bağıl nem %75'i aşıyor. Gıda güvenliği standartları bu değerlerin altını zorunlu kılıyor. Firmadan gelen talep, sistemin komple yenilenmesi veya ek ünite ile desteklenmesi. Video, mevcut ünitenin yerleşimini ve hava akışını gösteriyor. Keşif sonrası iki alternatif sunuldu; firma karar aşamasında.",
+    "media": {
+      "type": "video",
+      "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "poster": "https://picsum.photos/id/1060/1200/675",
+      "caption": null
+    }
+  }
+]

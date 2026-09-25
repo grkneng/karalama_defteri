@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- SITE META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karalama Defteri | MicroBlog</title>
+    <meta name="description" content="..." />
+    <link rel="canonical" href="..." />
+    <meta name="robots" content="noindex, follow" />
+
+    <!-- THEME & ICON -->
+    <meta name="theme-color" content="#5c9eed" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Karalama Defteri" />
+    <meta property="og:description" content="..." />
+    <meta property="og:url" content="..." />
+    <meta property="og:image" content="assets/images/og_cover.jpg" />
+    <meta property="og:site_name" content="Karalama Defteri" />
+    <meta property="og:locale" content="tr_TR" />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Karalama Defteri" />
+    <meta name="twitter:description" content="..." />
+    <meta name="twitter:image" content="assets/images/tc_cover.jpg" />
+
+    <!-- LIBRARIES (CDN) -->
+    <!-- google fonts (ubuntu sans & mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CUSTOM STYLES -->
+    <link href="../custom.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Karalama Defteri</a>
+
+        <!-- main menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Araştırmalar</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Projeler</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Uygulamalar</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Raporlar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE LAYOUT -->
+    <div class="container my-4">
+      <div class="row">
+        <!-- ASIDE I -->
+        <aside class="col-lg-3 sidebar d-none d-lg-block">
+          <!-- toc dock -->
+          <nav>
+            <h4 class="h6 border-bottom pb-2">
+              <i class="bi bi-journal-bookmark-fill me-2"></i>TOC
+            </h4>
+            <ul class="nav flex-column small">
+              <li><a href="#01">Blog Post I</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- MAIN -->
+        <main class="col-lg-6 pe-4 border-end">
+          <!-- HEADER -->
+          <header class="mb-4 border-bottom">
+            <!-- breadcrumb -->
+            <nav>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="../index.html">Karalama Defteri</a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Yazı İşleri</a></li>
+                <li class="breadcrumb-item active">Author Name</li>
+              </ol>
+            </nav>
+
+            <!-- editorial -->
+            <div>
+              <h1>Author Blog</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <!-- editor sign -->
+            <h6 class="text-end mt-5">Gürkan Engin</h6>
+            <address class="small text-end">
+              <a href="mailto:gurkanengin@hotmail.com"
+                >gurkanengin@hotmail.com</a
+              ><br />
+              <a href="tel:+15551234267">+1 (555) 123‑4267</a>
+            </address>
+          </header>
+          <!-- POSTS -->
+
+          <!-- ARTICLE 01 -->
+          <article class="mb-4">
+            <!-- title & article meta -->
+            <h1 id="01"><a href="#">Blog Post I</a></h1>
+
+            <!-- summary -->
+            <p class="lead text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              hendrerit nisi sed sollicitudin pellentesque.
+            </p>
+
+            <p>
+              Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique
+              nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a
+              dui et dui fringilla consectetur id nec massa. Aliquam erat
+              volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt
+              neque.
+            </p>
+            <p>
+              Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc
+              eros, mattis at dui ac, convallis semper risus. In adipiscing
+              ultrices tellus, in suscipit massa vehicula eu.
+            </p>
+            <!-- COMMENTS SECTION -->
+            <section>
+              <!-- Yorum Listesi -->
+              <div class="d-flex flex-column gap-3 small">
+                <!-- 1. Yazar Yorumu (@author) -->
+                <div class="ps-3" style="border-left: 3px solid var(--kd-blue)">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-1"
+                  >
+                    <span class="fw-bold" style="color: var(--kd-blue)">
+                      Gürkan Engin
+                      <span class="text-muted fw-normal">(@author)</span>
+                    </span>
+                    <time class="caption" datetime="2026-09-24T15:00"
+                      >24 Eylül 2026 15:00</time
+                    >
+                  </div>
+                  <p class="mb-0 text-secondary">
+                    Makalenin bu kısmına gelen geri bildirimler doğrultusunda
+                    teknik detayları önümüzdeki günlerde güncelleyeceğim.
+                  </p>
+                </div>
+
+                <!-- 2. Editör Yorumu (@editor) -->
+                <div
+                  class="ps-3"
+                  style="border-left: 3px solid var(--kd-orange) !important"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-1"
+                  >
+                    <span class="fw-bold" style="color: var(--kd-orange)">
+                      Teknik Editör
+                      <span class="text-muted fw-normal">(@editor)</span>
+                    </span>
+                    <time class="caption" datetime="2026-09-24T16:10"
+                      >24 Eylül 2026 16:10</time
+                    >
+                  </div>
+                  <p class="mb-0 text-secondary">
+                    Formüller ve kod blokları standartlara uygun görünüyor,
+                    onaylanmıştır.
+                  </p>
+                </div>
+
+                <!-- 3. Kullanıcı Yorumu (@user) -->
+                <div
+                  class="ps-3"
+                  style="border-left: 3px solid var(--kd-green)"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-1"
+                  >
+                    <span class="fw-bold" style="color: var(--kd-green)">
+                      Ahmet Yılmaz
+                      <span class="text-muted fw-normal">(@user)</span>
+                    </span>
+                    <time class="caption" datetime="2026-09-24T17:45"
+                      >24 Eylül 2026 17:45</time
+                    >
+                  </div>
+                  <p class="mb-0 text-secondary">
+                    Açıklamalar için teşekkürler, Bernoulli denklemi ile ilgili
+                    kısım çok net anlaşılmış.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </article>
+
+          <!-- PAGINATION -->
+          <nav class="my-4 border-top pt-3">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <p class="h6 d-block">Önce,</p>
+                <span class="small text-secondary"
+                  >Yeni başladık, öncesi yok.</span
+                >
+              </div>
+              <div class="col-md-6 ps-3 text-end border-start">
+                <a href="#" class="h6 d-block">ve sonrası...</a>
+                <span class="small text-secondary"
+                  >consectetur adipiscing elit</span
+                >
+              </div>
+            </div>
+          </nav>
+        </main>
+
+        <!-- ASIDE II -->
+        <aside class="col-lg-3">
+          <!-- author profile -->
+          <section class="mb-4">
+            <div class="text-center mb-3">
+              <img
+                src="https://picsum.photos/120/120?id=author"
+                class="rounded-circle img-thumbnail shadow-sm mb-2"
+                style="width: 90px; height: 90px; object-fit: cover"
+                alt="Gürkan Engin"
+              />
+              <h5 class="h6 fw-bold mb-1">Author Name</h5>
+              <p class="caption mb-2">Author Title</p>
+            </div>
+            <p class="small text-center text-secondary mb-3">
+              Sistem mimarisi, web teknolojileri ve gömülü sistemler üzerine
+              araştırmalar yapan tutkulu bir yazılım geliştirici.
+            </p>
+            <div class="d-flex justify-content-center gap-3 fs-5">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener"
+                title="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                title="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener"
+                title="LinkedIn"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="mailto:gurkanengin@hotmail.com" title="E-posta"
+                ><i class="bi bi-envelope"></i
+              ></a>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="small bg-body-tertiary border-top">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-1">
+            2026 | author_name_01.html
+          </div>
+
+          <!-- sub menu -->
+          <div
+            class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3"
+          >
+            <a href="#">Arşiv</a>
+            <a href="#">Kullanma Kılavuzu</a>
+            <a href="#">Iletisim</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "21",
+    "title": "Örnek I",
+    "url": "projects/yenipazar.html",
+    "meta": "Engin Mühendislik ▪ 22 Eylül 2026",
+    "summary": "Mevcut ısıtma hattı, yeni poliklinik bloğunun debisini karşılamıyor. Revizyon için ön teklif istendi.",
+    "description": "Hastanenin 2004 yılında kurulan ısıtma sistemi...\n\nBasınç kaybı ölçümleri...",
+    "media": {
+      "type": "image",
+      "src": "https://picsum.photos/600/400?id=1",
+      "alt": "Hastane kazan dairesi",
+      "caption": "Figure 01 — Mevcut kazan dairesi ve ana hat bağlantısı"
+    }
+  },
+  {
+    "id": "22",
+    "title": "Örnek II",
+    "url": "projects/yenipazar.html",
+    "meta": "Engin Mühendislik ▪ 22 Eylül 2026",
+    "summary": "Mevcut ısıtma hattı, yeni poliklinik bloğunun debisini karşılamıyor. Revizyon için ön teklif istendi.",
+    "description": "Hastanenin 2004 yılında kurulan ısıtma sistemi...\n\nBasınç kaybı ölçümleri...",
+    "media": {
+      "type": "image",
+      "src": "https://picsum.photos/600?id=1",
+      "alt": "Hastane kazan dairesi",
+      "caption": "Figure 01 — Mevcut kazan dairesi ve ana hat bağlantısı"
+    }
+  },
+  {
+    "id": "23",
+    "title": "Örnek III",
+    "url": "projects/yenipazar.html",
+    "meta": "Engin Mühendislik ▪ 22 Eylül 2026",
+    "summary": "Mevcut ısıtma hattı, yeni poliklinik bloğunun debisini karşılamıyor. Revizyon için ön teklif istendi.",
+    "description": "Hastanenin 2004 yılında kurulan ısıtma sistemi...\n\nBasınç kaybı ölçümleri...",
+    "media": {
+      "type": "image",
+      "src": "https://picsum.photos/600/400?id=2",
+      "alt": "Hastane kazan dairesi",
+      "caption": "Figure 01 — Mevcut kazan dairesi ve ana hat bağlantısı"
+    }
+  }
+]

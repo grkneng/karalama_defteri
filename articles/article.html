@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- SITE META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DENEMELER</title>
+    <meta name="description" content="..." />
+    <link rel="canonical" href="..." />
+    <meta name="robots" content="noindex, follow" />
+
+    <!-- THEME & ICON -->
+    <meta name="theme-color" content="#5c9eed" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Karalama Defteri" />
+    <meta property="og:description" content="..." />
+    <meta property="og:url" content="..." />
+    <meta property="og:image" content="assets/images/og_cover.jpg" />
+    <meta property="og:site_name" content="Karalama Defteri" />
+    <meta property="og:locale" content="tr_TR" />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Karalama Defteri" />
+    <meta name="twitter:description" content="..." />
+    <meta name="twitter:image" content="assets/images/tc_cover.jpg" />
+
+    <!-- LIBRARIES (CDN) -->
+    <!-- google fonts (ubuntu sans & mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- katex -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css"
+      integrity="sha384-JctiRyLzXCrSoOOzFlSoWLdyzQl7OrrRnhyeBmzB6ZWtcjccUyc8lCQJqIbs3uQX"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.js"
+      integrity="sha384-+7Keh381hSkXmXqnjC0JBM/kzsN6TFj+wMKychSLjTvJ8/0ElMde2uKl8i6p6Buj"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"></script>
+
+    <!-- prism -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" />
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+
+    <!-- CUSTOM STYLES -->
+    <link href="../custom.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Denemeler</a>
+
+        <!-- main menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Araştırmalar</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Projeler</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Uygulamalar</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Raporlar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE LAYOUT -->
+    <div class="container my-4">
+      <div class="row">
+        <!-- ASIDE I -->
+        <aside class="col-lg-3 sidebar d-none d-lg-block">
+          <!-- toc dock -->
+          <nav>
+            <h4 class="h6 border-bottom pb-2"><i class="bi bi-journal-bookmark-fill me-2"></i>TOC</h4>
+            <ul class="small nav flex-column">
+              <li><a href="#01">Alt Başlık</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="col-lg-6 pe-4 border-end">
+          <!-- HEADER -->
+
+          <!-- breadcrumb -->
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="../index.html">Karalama Defteri</a>
+              </li>
+              <li class="breadcrumb-item"><a href="#">Makaleler</a></li>
+              <li class="breadcrumb-item active">Makale Başlığı</li>
+            </ol>
+          </nav>
+
+          <!-- ARTICLE -->
+
+          <article class="mb-4">
+            <!-- title & article meta -->
+            <h1 id="02"><a href="#">Makale Başlığı</a></h1>
+
+            <!-- summary -->
+            <p class="lead text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+
+            <!--figure (cover image) -->
+            <figure>
+              <img
+                src="https://picsum.photos/640/360?id=01"
+                class="figure-img img-fluid rounded"
+                loading="lazy"
+                alt="Figure 001 - Cover Sample" />
+              <figcaption class="caption text-center">Figure 001 - Cover Sample</figcaption>
+            </figure>
+
+            <p>
+              Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet
+              porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut
+              dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis.
+            </p>
+            <h2 id="01">Alt Başlık</h2>
+            <p>
+              Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa
+              vehicula eu.
+            </p>
+          </article>
+
+          <!-- PAGINATION -->
+          <nav class="my-4 border-top pt-3">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <p class="h6 d-block">Önceki Makale</p>
+                <span class="small text-secondary">Açıklama</span>
+              </div>
+              <div class="col-md-6 ps-3 text-end border-start">
+                <a href="#" class="h6 d-block">Sonraki Makale</a>
+                <span class="small text-secondary">Açıklama</span>
+              </div>
+            </div>
+          </nav>
+        </main>
+
+        <!-- ASIDE II -->
+        <aside class="col-lg-3">
+          <!-- author profile -->
+          <section class="mb-4">
+            <div class="text-center mb-3">
+              <img
+                src="https://picsum.photos/120/120?id=author"
+                class="rounded-circle img-thumbnail shadow-sm mb-2"
+                style="width: 90px; height: 90px; object-fit: cover"
+                alt="Gürkan Engin" />
+              <h5 class="h6 fw-bold mb-1">Author Name</h5>
+              <p class="caption mb-2">Author Title</p>
+            </div>
+            <p class="small text-center text-secondary mb-3">
+              Sistem mimarisi, web teknolojileri ve gömülü sistemler üzerine araştırmalar yapan tutkulu bir yazılım
+              geliştirici.
+            </p>
+            <div class="d-flex justify-content-center gap-3 fs-5">
+              <a href="https://github.com" target="_blank" rel="noopener" title="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://x.com" target="_blank" rel="noopener" title="LinkedIn"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="mailto:gurkanengin@hotmail.com" title="E-posta"><i class="bi bi-envelope"></i></a>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="small bg-body-tertiary border-top">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-1">2026 | article.html</div>
+
+          <!-- sub menu -->
+          <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+            <a href="#">Arşiv</a>
+            <a href="#">Kullanma Kılavuzu</a>
+            <a href="#">Iletisim</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+
+    <!-- katex JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "$", right: "$", display: false },
+            { left: "\\(", right: "\\)", display: false }
+          ],
+          throwOnError: false
+        });
+      });
+    </script>
+
+    <!-- prism JS -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <!-- fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        hideScrollbar: false
+      });
+    </script>
+  </body>
+</html>

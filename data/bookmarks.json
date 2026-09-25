@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Dwitter",
+    "url": "https://www.dwitter.net/",
+    "summary": "Dwitter.net, JavaScript sanatçılarının 140 karakterlik kod satırlarıyla görsel şölenler yarattığı, dijital dünyanın en minimalist ama bir o kadar da çılgın sahnesi. Ekran kartlarını terleten bu devasa piksel dansında, üç beş satırlık saf kodun nasıl hipnotize edici animasyonlara dönüştüğüne inanmak güç; tabii kodun arasına sızıp \"burada ne olmuş\" diye bakmaya cesaretiniz varsa."
+  },
+  {
+    "title": "SameEnergy",
+    "url": "https://same.energy/",
+    "summary": "Same.energy, görsel benzerlikler üzerinden uçsuz bucaksız bir fotoğraf okyanusunda sörf yapmanızı sağlayan, yapay zekâ tabanlı alışılmadık bir arama motoru. Anahtar kelimelerin hükmünü yitirdiği, sadece estetik ve renk akrabalığıyla çalışan bu dijital galeride kaybolmamak neredeyse imkânsız; piksellerin aralarındaki gizli bağları keşfetmek ise işin en büyüleyici kısmı."
+  },
+  {
+    "title": "PyChess",
+    "url": "https://www.pychess.org/",
+    "summary": "Klasik satrancı masaya yatırıp kuralları esneten, standart tahtanın ötesindeki varyasyonlarla dolu alternatif bir oyun alanı. Sıradan mat planlarından sıkılanlar için hem zihni zorlayan hem de stratejinin sınırlarını eğlenceli bir labirente dönüştüren hamlelerin konuşulduğu bir buluşma noktası."
+  },
+  {
+    "title": "Downdetector Türkiye",
+    "url": "https://downdetector.tr/",
+    "summary": "Favori dijital servislerin kalbinin durduğu ya da nefesinin kesildiği anlarda herkesin ilk koşturduğu o dijital acil servis. \"Acaba bende mi sorun var, yoksa yine koca bir altyapı çöktü mü?\" paranoyasını anında sonlandıran, anlık kesinti raporlarıyla dijital dünyanın nabzını tutan vazgeçilmez bir panik odası."
+  },
+  {
+    "title": "McMaster-Carr",
+    "url": "https://www.mcmaster.com/",
+    "summary": "Mühendislik dünyasının gizli mabetlerinden biri; aradığınız en spesifik civatadan endüstriyel valflere kadar milyonlarca parçanın kütüphanesini barındıran, projelere can suyu veren devasa bir dijital katalog. Tasarım masasında \"acaba bu mekanik parça piyasada var mı, varsa teknik detayı nedir\" kayboluşunu tek tıkla bitiren, prototip aşamasındaki mühendislerin kalbini çalan kusursuz bir kütüphane."
+  },
+  {
+    "title": "OpenFOAM",
+    "url": "https://www.openfoam.com/",
+    "summary": "Akışkanlar mekaniğinin sonsuz karmaşasını açık kaynak kodlu dünyanın özgürlüğüyle buluşturan, endüstriyel simülasyonların o ezber bozan ağır topu. Navier-Stokes denklemlerini ekrandan süzüp gerçeğe dönüştüren bu devasa platform; rüzgâr tünellerini bilgisayar ekranına taşıyan, termodinamik labirentlerde kaybolmayı göze alan mühendislerin meydan okuma alanı."
+  },
+  {
+    "title": "TraceParts",
+    "url": "https://www.traceparts.com/",
+    "summary": "CAD dünyasının o devasa kütüphanelerini tek bir çatı altında toplayan, mühendislerin imdadına hızla koşan devasa bir parça havuzu. Üç boyutlu model ararken saatler harcamak istemeyenler için doğrudan üretici onaylı veriler sunması harika bir konfor; tabi alternatif arayanlar için benzer bir dev olan <a href=\"https://www.cadenas.de/\" target=\"_blank\" rel=\"noopener noreferrer\">Cadenas</a> kapısını çalmak da akılcı bir seçenek."
+  },
+  {
+    "title": "MatWeb",
+    "url": "https://www.matweb.com/",
+    "summary": "Mühendislerin malzeme kütüphanesindeki en sadık dostu; çelikten plastiğe, kompozitlerden seramiklere kadar binlerce malzemenin mekanik ve fiziksel özelliklerini önünüze seren devasa bir dijital sicil defteri. Parça tasarımı yaparken acaba bu alaşımın akma dayanımı kaçmış paniğini anında bitiren, mühendislik masalarının olmazsa olmaz malzeme ansiklopedisi."
+  },
+  {
+    "title": "HyperPhysics",
+    "url": "http://hyperphysics.phy-astr.gsu.edu/",
+    "summary": "Fizik dünyasının o devasa kavramlar ağını birbirine bağlayan, Georgia State Üniversitesi'nin ellerinden çıkma efsanevi harita-kılavuz. Sayfalar arasında kaybolurken kuantum mekaniğinden termodinamiğe kadar her şeyi zihninizde anında netleştiren; karmaşık formüllerin arkasındaki mantığı konsept haritalarıyla gözler önüne seren eşsiz bir dijital laboratuvar."
+  },
+  {
+    "title": "Project Materials",
+    "url": "https://projectmaterials.com/",
+    "summary": "Borulama ve enstrümantasyon dünyasının o ezber bozan karmaşasını zarafetle çözen, özellikle blog yazılarıyla mühendislik masalarının vazgeçilmez pusulası haline gelen yaşayan bir başvuru kaynağı. P&ID sembollerinden malzeme standartlarına kadar sahada lazım olan ne varsa netlikle sunan, karmaşık endüstriyel detayları anlayan biriyle dertleşiyormuşçasına okunur kılan nitelikli bir rehber."
+  },
+  {
+    "title": "Math Insight",
+    "url": "https://mathinsight.org/",
+    "summary": "Soyut matematik kavramlarının o korkutucu duvarını yıkan, çok boyutlu integrallerden vektör alanlarına kadar her şeyi sezgisel görsellerle zihne nakşeden ferahlatıcı bir rehber. Denklemlerin ardındaki geometrik gerçeği yakalamak isteyenler için tahtaya kalkma stresi yaratmayan, adeta kalem kağıtla yapılan keyifli bir sohbet kıvamında."
+  },
+  {
+    "title": "Open Modelica",
+    "url": "https://openmodelica.org/",
+    "summary": "Açık kaynak dünyasında sistem modelleme ve simülasyon denince akla gelen en güçlü alternatiflerden biri; karmaşık fiziksel sistemleri modellemek ve mühendislik denklemlerini alt alta dizebilmek için hayati bir laboratuvar. Modelica dilinin sunduğu nesne yönelimli esneklikle, mekanikten elektriğe kadar geniş bir yelpazede gerçeğe en yakın simülasyonları masaüstüne getiren vazgeçilmez bir araç."
+  },
+  {
+    "title": "GNU Octave",
+    "url": "https://octave.org/",
+    "summary": "MATLAB dünyasının o ağırbaşlı ve masraflı tahtına karşı bayrak açan, sayısal hesaplamalardan doğrusal cebire kadar her türlü mühendislik problemini terminalde veya arayüzde zarafetle çözen güçlü bir alternatif. Hazır m-dosyalarıyla uyumlu çalışması ve matris operasyonlarındaki hızı sayesinde, cepleri yakmadan ileri düzey simülasyonlar koşturmak isteyenler için adeta biçilmiş kaftan."
+  },
+  {
+    "title": "Historic England",
+    "url": "https://historicengland.org.uk/",
+    "summary": "Geçmişin endüstriyel ihtişamını ve yapısal mirasını koruyarak geleceğe taşımak isteyenler için İngiltere’nin tarihi dokusunu dijital bir titizlikle haritalandıran devasa bir başvuru kaynağı. Fabrika binalarından tarihi köprülere kadar eski yapıların karakterini bozmadan nasıl ele alınacağını gösteren, restorasyon ve yeniden işlevlendirme projelerinde ilham arayanların masasından eksik etmek istemeyeceği eşsiz bir kılavuz."
+  },
+  {
+    "title": "DevDocs",
+    "url": "https://devdocs.io/",
+    "summary": "Onlarca farklı programlama dilinin ve kütüphanenin dokümantasyonunu tek bir ekranda, internet bağlantısına bile ihtiyaç duymadan toplayan o muazzam arama motoru. Sekmeler arasında kaybolma devrini kapatan, en karmaşık API referanslarını veya kütüphane detaylarını saniyeler içinde önünüze seren yazılımcıların gizli sığınağı."
+  },
+  {
+    "title": "Site Adı",
+    "url": "#",
+    "summary": "AÇIKLAMA"
+  }
+]

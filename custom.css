@@ -1,0 +1,129 @@
+:root {
+  --bs-body-bg: #fbfbfa;
+  --bs-body-color: #1a1a1a;
+  --bs-secondary-color: #6e6e73;
+  --bs-border-color: #e5e5e7;
+
+  --kd-red: #dc3545;
+  --kd-green: #2a7b4c;
+  --kd-blue: #2b59c3;
+  --kd-orange: #d97706;
+
+  --nav-offset: 5.35rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-offset);
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-family: "Ubuntu Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+
+a:hover {
+  color: var(--kd-red);
+}
+
+a[data-fancybox] img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+a[data-fancybox]:hover img {
+  filter: grayscale(0%);
+}
+
+pre[class*="language-"] {
+  background: transparent;
+  font-family: "Ubuntu Mono", monospace;
+  border: none;
+  border-left: 3px solid var(--kd-blue);
+  border-radius: 0;
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  font-size: 0.875rem;
+}
+
+code[class*="language-"],
+code {
+  background: transparent;
+  text-shadow: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: var(--nav-offset);
+  align-self: flex-start;
+  max-height: calc(100vh - var(--nav-offset) - 1.5rem);
+  overflow-y: auto;
+}
+
+.caption {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 0.85rem;
+  color: var(--bs-secondary-color);
+}
+
+.label {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.accordion-item {
+  border: 0;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.accordion-button {
+  padding: 0.7rem 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--kd-red);
+  background: transparent;
+  box-shadow: none;
+}
+
+.accordion-body {
+  padding: 0 0 1rem;
+}
+
+.katex {
+  margin: 1.5rem 0;
+  font-size: 1em;
+}
+
+.katex-display {
+  margin: 1.5rem 0;
+  font-size: 1.25em;
+}
+
+.katex-error {
+  color: var(--kd-red);
+  font-family: inherit;
+}
+
+#scroll-sentinel {
+  height: 1px;
+}
