@@ -62,7 +62,7 @@
     (entries) => {
       if (entries[0].isIntersecting) renderBatch();
     },
-    { rootMargin: "300px" },
+    { rootMargin: "300px" }
   );
 
   fetch("data/bookmarks.json")
@@ -72,8 +72,7 @@
     })
     .then((data) => {
       if (!Array.isArray(data) || data.length === 0) {
-        container.innerHTML =
-          '<p class="text-secondary caption">Henüz bookmark yok.</p>';
+        container.innerHTML = '<p class="text-secondary caption">Henüz bookmark yok.</p>';
         return;
       }
 
@@ -88,7 +87,6 @@
     })
     .catch((error) => {
       console.error("Bookmark'lar yüklenirken hata oluştu:", error);
-      container.innerHTML =
-        '<p class="text-secondary caption">Bookmark\'lar yüklenemedi.</p>';
+      container.innerHTML = '<p class="text-secondary caption">Bookmark\'lar yüklenemedi.</p>';
     });
 })();

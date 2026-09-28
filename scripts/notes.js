@@ -49,6 +49,6 @@
       container.replaceChildren(fragment);
     })
     .catch((error) => {
-      console.error("Raporlar yüklenirken hata oluştu:", error);
+      console.error("Notlar yüklenirken bir hata oluştu:", error);
     });
 })();

@@ -13,34 +13,22 @@
     <meta name="theme-color" content="#5c9eed" />
     <link rel="icon" href="favicon.png" type="image/png" />
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Talepler Galerisi — Karalama Defteri" />
-    <meta property="og:description" content="..." />
-    <meta property="og:url" content="..." />
-    <meta property="og:image" content="assets/images/og_cover.jpg" />
-    <meta property="og:site_name" content="Karalama Defteri" />
-    <meta property="og:locale" content="tr_TR" />
-
-    <!-- TWITTER CARD -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Talepler Galerisi — Karalama Defteri" />
-    <meta name="twitter:description" content="..." />
-    <meta name="twitter:image" content="assets/images/tc_cover.jpg" />
-
     <!-- LIBRARIES (CDN) -->
+    <!-- google fonts (ubuntu sans & mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet" />
 
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous" />
 
+    <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
     <!-- CUSTOM STYLES -->
@@ -48,10 +36,11 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom" aria-label="Ana gezinme">
+    <nav class="navbar navbar-expand-lg sticky-top bg-color border-bottom">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Karalama Defteri</a>
+        <a class="navbar-brand fw-bold" href="index.html">Karalama Defteri</a>
 
+        <!-- main menu toggle -->
         <button
           class="navbar-toggler"
           type="button"
@@ -139,15 +128,16 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="small bg-body-tertiary border-top">
+    <footer class="small bg-color border-top">
       <div class="container py-3">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-1">2026 | rfq.html</div>
 
+          <!-- sub menu -->
           <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
-            <a href="#">Arşiv</a>
-            <a href="#">Kullanma Kılavuzu</a>
-            <a href="#">Iletisim</a>
+            <a href="archive.html">Arşiv</a>
+            <a href="terms.html">Şartlar & Koşullar</a>
+            <a href="contact.html">İletisim</a>
           </div>
         </div>
       </div>

@@ -13,27 +13,12 @@
     <meta name="theme-color" content="#5c9eed" />
     <link rel="icon" href="favicon.png" type="image/png" />
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Karalama Defteri" />
-    <meta property="og:description" content="..." />
-    <meta property="og:url" content="..." />
-    <meta property="og:image" content="assets/images/og_cover.jpg" />
-    <meta property="og:site_name" content="Karalama Defteri" />
-    <meta property="og:locale" content="tr_TR" />
-
-    <!-- TWITTER CARD -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Karalama Defteri" />
-    <meta name="twitter:description" content="..." />
-    <meta name="twitter:image" content="assets/images/tc_cover.jpg" />
-
     <!-- LIBRARIES (CDN) -->
     <!-- google fonts (ubuntu sans & mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet" />
 
     <!-- bootstrap -->
@@ -75,24 +60,26 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+    <nav class="navbar navbar-expand-lg sticky-top bg-color border-bottom">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Karalama Defteri</a>
-
         <!-- main menu -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Ana menüyü aç/kapat">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Araştırmalar</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Projeler</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Uygulamalar</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Raporlar</a></li>
+            <li class="nav-item"><a class="nav-link" href="researches.html">Araştırmalar</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projeler</a></li>
+            <li class="nav-item"><a class="nav-link" href="applications.html">Uygulamalar</a></li>
+            <li class="nav-item"><a class="nav-link" href="reports.html">Raporlar</a></li>
           </ul>
         </div>
       </div>
@@ -140,7 +127,7 @@
 
             <!-- editorial -->
             <div>
-              <h1>Ana Sayfa</h1>
+              <h1>Günce</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
@@ -175,7 +162,7 @@
               Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet
               porttitor venenatis.
             </p>
-            <!-- Audio Player -->
+            <!-- audio player -->
             <div class="mb-2">
               <audio
                 controls
@@ -192,14 +179,30 @@
             </p>
             <!-- video player -->
             <div class="ratio ratio-16x9 mb-3 bg-light">
-              <video class="rounded" controls poster="assets/images/myseterious-river.png">
-                <source src="#" type="video/mp4" />
+              <video class="rounded shadow" controls preload="metadata" poster="assets/images/myseterious-river.png">
+                <source src="assets/video/sample.mp4" type="video/mp4" />
               </video>
             </div>
             <p>
               Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper
               risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.
             </p>
+            <section class="my-4">
+              <div class="row g-3">
+                <div class="col-6">
+                  <p class="small pe-3 text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin
+                    pellentesque
+                  </p>
+                </div>
+                <div class="col-6 ps-3 border-start">
+                  <p class="small text-secondary">
+                    Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet
+                    porttitor venenatis.
+                  </p>
+                </div>
+              </div>
+            </section>
           </article>
 
           <!-- ARTICLE 12 -->
@@ -226,33 +229,57 @@
             <!-- gallery -->
             <div class="row g-3 mb-3">
               <div class="col-4">
-                <a href="https://picsum.photos/620/960?id=01" data-fancybox="gallery">
-                  <img src="https://picsum.photos/240/320?id=01" loading="lazy" class="img-fluid rounded-3" alt="" />
+                <a href="https://picsum.photos/900/1200?id=01" data-fancybox="gallery">
+                  <img
+                    src="https://picsum.photos/240/320?id=01"
+                    loading="lazy"
+                    class="img-fluid rounded shadow"
+                    alt="" />
                 </a>
               </div>
               <div class="col-4">
-                <a href="https://picsum.photos/620/960?id=02" data-fancybox="gallery">
-                  <img src="https://picsum.photos/240/320?id=02" loading="lazy" class="img-fluid rounded-3" alt="" />
+                <a href="https://picsum.photos/900/1200?id=02" data-fancybox="gallery">
+                  <img
+                    src="https://picsum.photos/240/320?id=02"
+                    loading="lazy"
+                    class="img-fluid rounded shadow"
+                    alt="" />
                 </a>
               </div>
               <div class="col-4">
-                <a href="https://picsum.photos/620/960?id=03" data-fancybox="gallery">
-                  <img src="https://picsum.photos/240/320?id=03" loading="lazy" class="img-fluid rounded-3" alt="" />
+                <a href="https://picsum.photos/900/1200?id=03" data-fancybox="gallery">
+                  <img
+                    src="https://picsum.photos/240/320?id=03"
+                    loading="lazy"
+                    class="img-fluid rounded shadow"
+                    alt="" />
                 </a>
               </div>
               <div class="col-4">
-                <a href="https://picsum.photos/620/960?id=04" data-fancybox="gallery">
-                  <img src="https://picsum.photos/240/320?id=04" loading="lazy" class="img-fluid rounded-3" alt="" />
+                <a href="https://picsum.photos/900/1200?id=04" data-fancybox="gallery">
+                  <img
+                    src="https://picsum.photos/240/320?id=04"
+                    loading="lazy"
+                    class="img-fluid rounded shadow"
+                    alt="" />
                 </a>
               </div>
               <div class="col-4">
-                <a href="https://picsum.photos/620/960?id=05" data-fancybox="gallery">
-                  <img src="https://picsum.photos/240/320?id=05" loading="lazy" class="img-fluid rounded-3" alt="" />
+                <a href="https://picsum.photos/900/1200?id=05" data-fancybox="gallery">
+                  <img
+                    src="https://picsum.photos/240/320?id=05"
+                    loading="lazy"
+                    class="img-fluid rounded shadow"
+                    alt="" />
                 </a>
               </div>
               <div class="col-4">
-                <a href="https://picsum.photos/620/960?id=06" data-fancybox="gallery">
-                  <img src="https://picsum.photos/240/320?id=06" loading="lazy" class="img-fluid rounded-3" alt="" />
+                <a href="https://picsum.photos/900/1200?id=06" data-fancybox="gallery">
+                  <img
+                    src="https://picsum.photos/240/320?id=06"
+                    loading="lazy"
+                    class="img-fluid rounded shadow"
+                    alt="" />
                 </a>
               </div>
             </div>
@@ -347,6 +374,40 @@ int main() {
               Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
               consequatur aut perferendis doloribus asperiores repellat.
             </p>
+            <!-- comments -->
+            <section class="d-flex border-top pt-3 flex-column gap-3 small">
+              <!-- yazar (@author) -->
+              <div class="ps-3" style="border-left: 3px solid var(--kd-blue)">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="fw-bold" style="color: var(--kd-blue)">Author</span>
+                  <time class="caption" datetime="2026-09-24T15:00">24 Eylül 2026 15:00</time>
+                </div>
+                <p class="mb-0 text-secondary">
+                  Makalenin bu kısmına gelen geri bildirimler doğrultusunda teknik detayları önümüzdeki günlerde
+                  güncelleyeceğim.
+                </p>
+              </div>
+              <!-- yorum (@editor) -->
+              <div class="ps-3" style="border-left: 3px solid var(--kd-orange) !important">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="fw-bold" style="color: var(--kd-orange)">Editor</span>
+                  <time class="caption" datetime="2026-09-24T16:10">24 Eylül 2026 16:10</time>
+                </div>
+                <p class="mb-0 text-secondary">
+                  Formüller ve kod blokları standartlara uygun görünüyor, onaylanmıştır.
+                </p>
+              </div>
+              <!-- user (@user) -->
+              <div class="ps-3" style="border-left: 3px solid var(--kd-green)">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="fw-bold" style="color: var(--kd-green)">User</span>
+                  <time class="caption" datetime="2026-09-24T17:45">24 Eylül 2026 17:45</time>
+                </div>
+                <p class="mb-0 text-secondary">
+                  Açıklamalar için teşekkürler, Bernoulli denklemi ile ilgili kısım çok net anlaşılmış.
+                </p>
+              </div>
+            </section>
           </article>
 
           <!-- ARTICLE 09 -->
@@ -383,8 +444,8 @@ int main() {
             <div class="ratio ratio-16x9 mb-3">
               <iframe
                 src="https://www.youtube.com/embed/fGgsNvxaA04?si=EzZl95LiLVSM6XFq"
-                class="rounded"
-                loading="lazy"
+                class="rounded shadow"
+                referrerpolicy="no-referrer-when-downgrade"
                 title="Minipolis - Official Trailer"
                 allowfullscreen>
               </iframe>
@@ -428,8 +489,8 @@ int main() {
                   </a>
                 </div>
                 <p>
-                  "Yazılım ve donanım entegrasyonunda en kritik eşik, sahadan gelen gerçek zamanlı verinin gecikmesiz
-                  işlenebilmesidir."
+                  Yazılım ve donanım entegrasyonunda en kritik eşik, sahadan gelen gerçek zamanlı verinin gecikmesiz
+                  işlenebilmesidir.
                 </p>
                 <div class="caption">
                   <time datetime="2026-09-02T14:15">14:15 · 02 Eylül 2026</time>
@@ -495,7 +556,7 @@ int main() {
 
             <!-- carousel -->
             <div id="slide_01" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-              <div class="carousel-inner rounded mb-3">
+              <div class="carousel-inner rounded mb-3 shadow">
                 <!-- image 1 -->
                 <div class="carousel-item active">
                   <img src="https://picsum.photos/640/350?id=01" class="d-block w-100" loading="lazy" alt="" />
@@ -646,12 +707,12 @@ int main() {
             </p>
 
             <!-- spreadsheet -->
-            <div class="my-3">
-              <table class="table table-responsive mb-1">
+            <div class="table-responsive">
+              <table class="table mb-1 label small">
                 <thead>
                   <tr>
-                    <th class="ps-0" scope="row">#</th>
-                    <th scope="col">Malzeme</th>
+                    <th scope="col">#</th>
+                    <th>Malzeme</th>
                     <th class="text-end" scope="col">Miktar</th>
                     <th class="text-end" scope="col">Birim</th>
                     <th class="text-end" scope="col">Birim Fiyatı</th>
@@ -659,35 +720,35 @@ int main() {
                 </thead>
                 <tbody>
                   <tr>
-                    <th class="ps-0" scope="row">01</th>
+                    <th class="col" scope="row">01</th>
                     <td>Table Item I</td>
                     <td class="text-end">3</td>
                     <td class="text-end">Ad</td>
                     <td class="text-end" style="color: var(--kd-red)">13.857,85 TL</td>
                   </tr>
                   <tr>
-                    <th class="ps-0" scope="row">02</th>
+                    <th class="col" scope="row">02</th>
                     <td>Table Item II</td>
                     <td class="text-end">38,67</td>
                     <td class="text-end">m²</td>
                     <td class="text-end" style="color: var(--kd-red)">2.780,15 TL</td>
                   </tr>
                   <tr>
-                    <th class="ps-0" scope="row">03</th>
+                    <th class="col" scope="row">03</th>
                     <td>Table Item III</td>
                     <td class="text-end">12,43</td>
                     <td class="text-end">Lt</td>
                     <td class="text-end" style="color: var(--kd-red)">500,93 TL</td>
                   </tr>
                   <tr>
-                    <th class="ps-0" scope="row">04</th>
+                    <th class="col" scope="row">04</th>
                     <td>Table Item IV</td>
                     <td class="text-end">27,85</td>
                     <td class="text-end">m</td>
                     <td class="text-end" style="color: var(--kd-red)">3.250,55 TL</td>
                   </tr>
                   <tr>
-                    <th class="ps-0" scope="row">05</th>
+                    <th class="col" scope="row">05</th>
                     <td>Table Item V</td>
                     <td class="text-end">1,30</td>
                     <td class="text-end">Kg</td>
@@ -807,8 +868,8 @@ int main() {
             <!--figure (cover image) -->
             <figure>
               <img
-                src="https://picsum.photos/640/480?id=01"
-                class="figure-img img-fluid rounded"
+                src="https://picsum.photos/760/480?id=01"
+                class="figure-img img-fluid rounded shadow"
                 loading="lazy"
                 alt="Figure 001 - Cover Sample" />
               <figcaption class="caption text-center">Figure 001 - Cover Sample</figcaption>
@@ -845,6 +906,7 @@ int main() {
               porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut
               dui ut lacus dictum fermentum vel tincidunt neque.
             </p>
+
             <p>
               Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper
               risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.
@@ -868,8 +930,19 @@ int main() {
 
         <!-- ASIDE II -->
         <aside class="col-lg-3">
+          <div class="flex-column mb-4 border-bottom">
+            <p class="small text-muted">
+              Bu web günlüğünde yer alan özgün içerikler aksi açıkça belirtilmedikçe,
+              <a href="https://creativecommons.org/licenses/by/4.0/" rel="license"
+                >Creative Commons Attribution 4.0 International</a
+              >, uygulamalar, scriptler ve kodlar ise
+              <a href="https://opensource.org/license/mit/" rel="license">MIT Lisansı</a>
+              kapsamında sunulmaktadır. Üçüncü taraf materyaller kendi lisans ve telif koşullarına tabidir.
+            </p>
+          </div>
+
           <!-- research-->
-          <section class="mb-4">
+          <section class="mb-5">
             <h4 class="h6 border-bottom pb-2 mb-2"><i class="bi bi-journal-richtext me-2"></i>ARAŞTIRMALAR</h4>
             <!-- label 1 -->
             <p class="label fw-bold mb-0"><a href="#">ARAŞTIRMA KONUSU 01</a></p>
@@ -882,20 +955,20 @@ int main() {
             <p class="small text-secondary mb-2">Araştırma III için kısa açıklama...</p>
           </section>
           <!-- projects -->
-          <section class="mb-4">
+          <section class="mb-5">
             <h4 class="h6 border-bottom pb-2 mb-3"><i class="bi bi-journal-check me-2"></i>PROJELER</h4>
             <!-- label 1 -->
             <p class="label fw-bold mb-0"><a href="#">MI 005/2026</a></p>
             <p class="small text-secondary mb-2">MI 005/2026 için kısa açıklama...</p>
             <!-- label 2 -->
             <p class="label fw-bold mb-0"><a href="#">WT 002/2026</a></p>
-            <p class="small text-secondary">WT 002/2026 için kısa açıklama...</p>
+            <p class="small text-secondary mb-2">WT 002/2026 için kısa açıklama...</p>
             <!-- label 3 -->
             <p class="label fw-bold mb-0"><a href="#">EI 007/2026</a></p>
             <p class="small text-secondary mb-2">EI 007/2026 için kısa açıklama...</p>
           </section>
           <!-- notes -->
-          <section class="mb-4">
+          <section class="mb-5">
             <h4 class="h6 border-bottom pb-2 mb-3"><i class="bi bi-journal-text me-2"></i>NOTLAR</h4>
             <div id="notes"></div>
           </section>
@@ -904,16 +977,16 @@ int main() {
     </div>
 
     <!-- FOOTER -->
-    <footer class="small bg-body-tertiary border-top">
+    <footer class="small bg-color border-top">
       <div class="container py-3">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-1">2026 | index.html</div>
 
           <!-- sub menu -->
           <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
-            <a href="#">Arşiv</a>
-            <a href="#">Kullanma Kılavuzu</a>
-            <a href="#">Iletisim</a>
+            <a href="archive.html">Arşiv</a>
+            <a href="terms.html">Şartlar & Koşullar</a>
+            <a href="contact.html">İletisim</a>
           </div>
         </div>
       </div>

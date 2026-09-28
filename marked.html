@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <!-- SITE META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Markdown Okuyucu</title>
+        <meta name="description" content="..." />
+        <link rel="canonical" href="..." />
+        <meta name="robots" content="noindex, follow" />
+
+        <!-- THEME & ICON -->
+        <meta name="theme-color" content="#5c9eed" />
+        <link rel="icon" href="favicon.png" type="image/png" />
+
+        <!-- LIBRARIES (CDN) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet" />
+
+        <!-- bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+        <!-- marked JS -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+        <!-- CUSTOM STYLES -->
+        <link href="custom.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg sticky-top bg-color border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Karalama Defteri</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Ana menüyü aç/kapat">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../researches.html">Araştırmalar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../projects.html">Projeler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../applications.html">Uygulamalar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../reports.html">Raporlar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- PAGE LAYOUT -->
+        <div class="container my-4">
+            <div class="row">
+                <!-- ASIDE I: Alfabetik TOC (Sabit değil) -->
+                <aside class="col-lg-3 d-none d-lg-block">
+                    <nav>
+                        <h4 class="h6 border-bottom pb-2">
+                            <i class="bi bi-journal-bookmark-fill me-2"></i>İÇİNDEKİLER
+                        </h4>
+                        <ul id="md-toc" class="nav flex-column small">
+                            <!-- JS ile alfabetik olarak doldurulacak -->
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- MAIN: Markdown İçerik Alanı -->
+                <main class="col-lg-6 pe-4 border-end">
+                    <article class="mb-4" id="markdown-content">
+                        <p class="text-secondary">Yükleniyor...</p>
+                    </article>
+                </main>
+                <aside class="col-lg-3 d-none d-lg-block"></aside>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="small bg-color border-top">
+            <div class="container py-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-1">2026 | marked.html</div>
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="../archive.html">Arşiv</a>
+                        <a href="../terms.html">Şartlar & Koşullar</a>
+                        <a href="../contact.html">İletisim</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+        <script src="scripts/markdown.js"></script>
+    </body>
+</html>

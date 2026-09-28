@@ -1,5 +1,5 @@
 :root {
-  --bs-body-bg: #fbfbfa;
+  --bs-body-bg: #f3f3f3;
   --bs-body-color: #1a1a1a;
   --bs-secondary-color: #6e6e73;
   --bs-border-color: #e5e5e7;
@@ -24,7 +24,6 @@ body {
   font-family: "Ubuntu Sans", sans-serif;
   font-size: 0.95rem;
   line-height: 1.75;
-  letter-spacing: -0.011em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -53,14 +52,14 @@ a[data-fancybox]:hover img {
 
 pre[class*="language-"] {
   background: transparent;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   border: none;
   border-left: 3px solid var(--kd-blue);
   border-radius: 0;
   padding: 0.5rem 0 0.5rem 1rem;
   margin: 1.25rem 0;
   overflow-x: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 code[class*="language-"],
@@ -80,13 +79,13 @@ code {
 }
 
 .caption {
-  font-family: "Ubuntu Mono", monospace;
-  font-size: 0.85rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
   color: var(--bs-secondary-color);
 }
 
 .label {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .accordion-item {
@@ -126,4 +125,9 @@ code {
 
 #scroll-sentinel {
   height: 1px;
+}
+
+.navbar.bg-color,
+footer.bg-color {
+  background-color: var(--bs-body-bg) !important;
 }
